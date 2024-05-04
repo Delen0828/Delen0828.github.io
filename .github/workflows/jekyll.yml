@@ -50,7 +50,8 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
-              - name: Install Node.js for Mermaid CLI
+        
+      - name: Install Node.js for Mermaid CLI
         uses: actions/setup-node@v3
         with:
           node-version: "14"
