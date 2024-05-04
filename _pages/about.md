@@ -18,4 +18,4 @@ I'm a first-year CS Ph.D. student at Georgia Tech, advised by <a href='https://c
 
 My research interest focuses on **animated visualization**, **collaborative visualization systems**, and **visualization recommender systems**. I explore how design choices impact perception in animated visualization, how AI assistants can enhance data collaboration with visualization systems, and how to recommend visualizations with minimal user interaction.
 
-I also have experience with traditional recommender systems, deep learning and reinforcement learning.
+I also have experience with *traditional recommender systems*, *deep learning* and *reinforcement learning*.
