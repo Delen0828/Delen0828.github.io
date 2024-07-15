@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Our abstract is accepted by VSS 2024 🥳
+Abstract accepted to VSS 2024 🥳
