@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Receive gift fund from MathWorks 💵
+Receive gift fund for GRAMM from MathWorks 💵
