@@ -14,7 +14,7 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
-I'm a first-year CS Ph.D. student at Georgia Tech, advised by <a href='https://cyxiong.com/'>Dr. Cindy Xiong Bearfield</a>. Prior to joining Georgia Tech, I worked with <a href='https://shuaili8.github.io/'>Dr. Shuai Li</a> at Shanghai Jiao Tong University.
+I'm a second-year CS Ph.D. student at Georgia Tech, advised by <a href='https://cyxiong.com/'>Dr. Cindy Xiong Bearfield</a>. Prior to joining Georgia Tech, I worked with <a href='https://shuaili8.github.io/'>Dr. Shuai Li</a> at Shanghai Jiao Tong University.
 
 My research interest focuses on **animated visualization**, **collaborative visualization systems**, and **visualization recommender systems**. I explore how design choices impact perception in animated visualization, how AI assistants can enhance data collaboration with visualization systems, and how to recommend visualizations with minimal user interaction.
 
