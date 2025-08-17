@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Full paper accepted to TheWebConf 2025 🥳
+Full paper accepted to TheWebConf 2025 (Oral) 🥳

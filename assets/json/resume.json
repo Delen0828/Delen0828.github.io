@@ -3,10 +3,11 @@
     "name": "Songwen Hu",
     "email": "shu343@gatech.edu",
     "phone": "(413) 210-0295",
-    "url": "https://delen0828.github.io",
+    "url": "https://github.com/Delen0828",
+    "summary": "Data Visualization, Human-centered AI, and adaptive interaction design. Passionate about bridging large-scale database with real-time multimodal systems for personalized user experiences.",
     "location": {
-      "address": "85 5th St NW",
-      "postalCode": "GA 30309",
+      "address": "",
+      "postalCode": "",
       "city": "Atlanta",
       "countryCode": "US",
       "region": "Georgia"
@@ -14,107 +15,175 @@
   },
   "education": [
     {
-      "institution": "School of Interactive Computing, Georgia Institute of Technology",
-      "location": "Atlanta, Georgia",
-      "url": "https://vis.gatech.edu/",
+      "institution": "Georgia Institute of Technology",
+      "location": "Atlanta, GA, USA",
+      "url": "https://www.gatech.edu/",
       "area": "Computer Science",
-      "studyType": "PhD",
-      "startDate": "2023-08-17",
-      "endDate": "2028-06-30"
+      "studyType": "Ph.D.",
+      "startDate": "2023-08",
+      "endDate": "2028-06",
+      "courses": [
+        "Data Vis Principles",
+        "Inform Visualization", 
+        "Data & Visual Analytic",
+        "Human-Computer Interact",
+        "Computer Vision",
+        "Psychological Statistics"
+      ]
     },
-	{
-		"institution": "UM-SJTU Joint Institute, Shanghai Jiao Tong University",
-		"location": "Atlanta, Georgia",
-		"url": "https://www.ji.sjtu.edu.cn/",
-		"area": "Electrical and Computer Engineering",
-		"studyType": "BS",
-		"startDate": "2019-09-01"
-	  }
+    {
+      "institution": "Shanghai Jiao Tong University",
+      "location": "Shanghai, CN",
+      "url": "https://www.ji.sjtu.edu.cn/",
+      "area": "Electrical and Computer Engineering",
+      "studyType": "B.Eng.",
+      "startDate": "2019-09",
+      "endDate": "2023-08",
+      "courses": [
+        "Calculus",
+        "Linear Algebra",
+        "Probabilistic Methods in Engineering",
+        "Discrete Mathematics",
+        "Programming & Elementary Data Structures",
+        "Data Structures & Algorithms",
+        "Intro to Data Science",
+        "Computer Organization",
+        "Signals & Systems",
+        "Circuits",
+        "Logic Design",
+        "Software Engineering",
+        "Intro to Artificial Intelligence",
+        "Machine Learning"
+      ]
+    }
   ],
   "work": [
     {
       "name": "Bosch China",
       "position": "Embedded Software Engineer Intern",
-      "startDate": "2023-01-01",
-      "endDate": "2023-05-30",
+      "location": "Shanghai, CN",
+      "startDate": "2022-01",
+      "endDate": "2022-06",
       "summary": "Deep Learning-based Gesture Recognition Algorithm Development",
-      "highlights": ["Developed gesture recognition algorithms for Human-Vehicle Interaction using DNN.","Applied the attention network to the neural network for dynamic gesture classification.","Achieved 90% accuracy for 16 static gestures and 9 dynamic gestures on webcam with 720p@30fps."]
+      "highlights": [
+        "Developed gesture recognition algorithms for Human-Vehicle Interaction using DNN.",
+        "Applied the attention network to the neural network for dynamic gesture classification.", 
+        "Achieved 90% accuracy for 16 static gestures and 9 dynamic gestures on webcam with 720p@30fps."
+      ]
     }
   ],
-  "publications": [    {
-	"name": "Motion-based visual encoding can improve performance on perceptual tasks with dynamic time series",
-	"publisher": "IEEE Visualization Conference (VIS 2024)",
-	"releaseDate": "2024-08-09",
-	"url": "https://arxiv.org/abs/2408.04799",
-	"summary": "In this paper, We examine the effectiveness of staging and tracing in dynamic displays. Results showed that tracing and staging are preferred by participants, and improve their performance in mean and variance tasks respectively. They also preferred display time 3 times shorter when staging is used. Also, encoding animation speed with mean and variance in congruent tasks is associated with higher accuracy."
-  },
+  "publications": [
     {
-      "name": "Hierarchical conversational preference elicitation with bandit feedback",
-      "publisher": "Conference on Information and Knowledge Management 2022 (CIKM 2022)",
-      "releaseDate": "2022-10-17",
-      "url": "https://research.ece.cmu.edu/lions/Papers/Hierarchical_CIKM.pdf",
-      "summary": "This research proposed a hierarchical structure for the traditional UCB (Upper Confidence Bound) method. Meanwhile, sufficient mathematical proofs and extensive experiments have verified the hierarchical UCB as an improved algorithm."
+      "name": "VisChatter: Enhance Synchronous Collaboration on Visualization Dashboard through Visual Annotations",
+      "publisher": "Annual Meeting of the Cognitive Science Society 2025 (CogSci 25')",
+      "releaseDate": "2025",
+      "authors": "Songwen Hu, Tong Yu, Ryan A. Rossi, Sungchul Kim, Cindy Xiong Bearfield",
+      "summary": "Presented at the Annual Meeting of the Cognitive Science Society 2025"
+    },
+    {
+      "name": "Interactive Visualization Recommendation with Hier-SUCB",
+      "publisher": "International World Wide Web Conference 2025 (WWW 25')",
+      "releaseDate": "2025",
+      "url": "https://arxiv.org/",
+      "authors": "Songwen Hu, Ryan A. Rossi, Tong Yu, Junda Wu, Handong Zhao, Sungchul Kim, Shuai Li",
+      "summary": "Accepted by International World Wide Web Conference 2025"
+    },
+    {
+      "name": "Perceptual Benefits of Animation are Task-Dependent: Effects of Staging and Tracing in Dynamic Displays",
+      "publisher": "IEEE Visualization Conference 2024 (VIS 24')",
+      "releaseDate": "2024",
+      "url": "https://arxiv.org/",
+      "authors": "Songwen Hu, Ouxun Jiang, Jeffrey Riedmiller, Cindy Xiong Bearfield",
+      "summary": "Accepted by IEEE Visualization Conference 2024"
+    },
+    {
+      "name": "Hierarchical Conversational Preference Elicitation with Bandit Feedback",
+      "publisher": "Conference on Information and Knowledge Management 2022 (CIKM 22')",
+      "releaseDate": "2022",
+      "url": "https://arxiv.org/",
+      "authors": "Jinhang Zuo, Songwen Hu, Shuai Li, Tong Yu, Handong Zhao, Carlee Joe-Wong",
+      "summary": "Accepted by Conference on Information and Knowledge Management 2022"
     }
   ],
-  "languages": [
+  "projects": [
     {
-      "language": "Python",
-      "fluency": "Main language",
-      "icon": ""
+      "name": "VisChatter – Visual Annotations for Collaborative Analytics",
+      "startDate": "2024",
+      "endDate": "2025",
+      "description": "Advisor: Cindy Xiong Bearfield (Georgia Tech), Tong Yu (Adobe)",
+      "highlights": [
+        "Designed and implemented an interactive visualization dashboard with real-time annotation to enable synchronous collaborative analytics.",
+        "Integrated speech recognition API, LLM-based keyword extraction, and custom annotation APIs for seamless multimodal input.",
+        "Conducted controlled A/B testing against baseline tools, measuring user engagement and task efficiency improvements, and collected qualitative feedback via in-person studies."
+      ]
     },
     {
-	  "language": "JavaScript",
-	  "fluency": "Main language",
-	  "icon": ""
-	},
-    {
-      "language": "C",
-      "fluency": "Capable",
-      "icon": ""
+      "name": "Interactive Visualization Recommendation with Hier-SUCB",
+      "startDate": "2024",
+      "endDate": "2025",
+      "description": "Advisor: Shuai Li (STJU), Ryan A. Rossi (Adobe)",
+      "highlights": [
+        "Developed a hierarchical bandit-based recommendation model to personalize visualization suggestions from user interaction histories.",
+        "Incorporated a bias term to model individual preferences and optimize recommendation relevance.",
+        "Performed A/B testing on the Plot.ly dataset, validating performance through an online user study."
+      ]
     },
     {
-	  "language": "C++",
-	  "fluency": "Capable",
-	  "icon": ""
-	},
-	{
-	  "language": "R",
-	  "fluency": "Capable",
-	  "icon": ""
-	},
-	{
-	  "language": "MATLAB",
-	  "fluency": "Capable",
-	  "icon": ""
-	},
-	{
-	  "language": "Verilog",
-	  "fluency": "Capable",
-	  "icon": ""
-	},
-	{
-	  "language": "RISC-V",
-	  "fluency": "Capable",
-	  "icon": ""
-	}
+      "name": "Hierarchical Conversational Preference Elicitation with Bandit Feedback",
+      "startDate": "2021",
+      "endDate": "2022",
+      "description": "Advisor: Shuai Li (SJTU), Tong Yu (Adobe)",
+      "highlights": [
+        "Proposed and implemented a multi-armed bandit algorithm for preference elicitation in hierarchical item spaces.",
+        "Ran large-scale simulations demonstrating performance gains over baseline algorithms.",
+        "Conducted online user study on the Yelp dataset to validate real-world applicability."
+      ]
+    }
   ],
   "skills": [
     {
-      "name": "Visualization",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming & ML Frameworks",
+      "icon": "fa-solid fa-code",
       "keywords": [
-        "Tableau",
-        "D3.js",
-		"Origin Lab"
+        "Python",
+        "MATLAB", 
+        "C++",
+        "JavaScript",
+        "PyTorch",
+        "TensorFlow",
+        "R"
       ]
     },
-	{
-	  "name": "Embedded System",
-	  "icon": "fa-solid fa-hashtag",
-	  "keywords": [
-	  	"Vivado",
-	  	"Arduino IDE"
-	  ]
-	}
+    {
+      "name": "Human-Computer Interaction",
+      "icon": "fa-solid fa-users",
+      "keywords": [
+        "D3.js",
+        "Vega-lite", 
+        "Tableau",
+        "Haptic feedback",
+        "VR-based storytelling",
+        "UX design"
+      ]
+    },
+    {
+      "name": "Experimental Design",
+      "icon": "fa-solid fa-flask",
+      "keywords": [
+        "jsPsych",
+        "Cognitive task development",
+        "User study design"
+      ]
+    },
+    {
+      "name": "Other Tools",
+      "icon": "fa-solid fa-tools",
+      "keywords": [
+        "Qt Designer",
+        "Unity (basic)",
+        "SolidWorks", 
+        "Origin Lab"
+      ]
+    }
   ]
 }

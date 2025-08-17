@@ -48,6 +48,16 @@
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
+    <!-- Label -->
+    {% if entry.label %}
+      <div class="publication-label">
+        {% assign labels = entry.label | split: ',' %}
+        {% for label in labels %}
+          {% assign trimmed_label = label | strip %}
+          <span class="label label-{{ trimmed_label | downcase }}">{{ trimmed_label }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
