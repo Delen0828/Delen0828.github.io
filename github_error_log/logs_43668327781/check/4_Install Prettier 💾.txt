@@ -1,0 +1,11 @@
+﻿2025-08-17T22:34:39.1923125Z ##[group]Run npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+2025-08-17T22:34:39.1923813Z [36;1mnpm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid[0m
+2025-08-17T22:34:39.1993666Z shell: /usr/bin/bash -e {0}
+2025-08-17T22:34:39.1993933Z ##[endgroup]
+2025-08-17T22:34:41.9505776Z 
+2025-08-17T22:34:41.9512868Z added 8 packages, and audited 9 packages in 3s
+2025-08-17T22:34:41.9513294Z 
+2025-08-17T22:34:41.9513471Z 1 package is looking for funding
+2025-08-17T22:34:41.9513822Z   run `npm fund` for details
+2025-08-17T22:34:41.9515154Z 
+2025-08-17T22:34:41.9515402Z found 0 vulnerabilities

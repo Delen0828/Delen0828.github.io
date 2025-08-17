@@ -1,0 +1,42 @@
+﻿2025-08-17T22:34:37.9234587Z Current runner version: '2.327.1'
+2025-08-17T22:34:37.9259100Z ##[group]Runner Image Provisioner
+2025-08-17T22:34:37.9259911Z Hosted Compute Agent
+2025-08-17T22:34:37.9260569Z Version: 20250812.370
+2025-08-17T22:34:37.9261140Z Commit: 4a2b2bf7520004e3e907c2150c8cabe342a3da32
+2025-08-17T22:34:37.9261826Z Build Date: 2025-08-12T16:08:14Z
+2025-08-17T22:34:37.9262417Z ##[endgroup]
+2025-08-17T22:34:37.9263004Z ##[group]Operating System
+2025-08-17T22:34:37.9263573Z Ubuntu
+2025-08-17T22:34:37.9264057Z 24.04.2
+2025-08-17T22:34:37.9264546Z LTS
+2025-08-17T22:34:37.9264968Z ##[endgroup]
+2025-08-17T22:34:37.9265497Z ##[group]Runner Image
+2025-08-17T22:34:37.9266051Z Image: ubuntu-24.04
+2025-08-17T22:34:37.9267108Z Version: 20250810.1.0
+2025-08-17T22:34:37.9268161Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250810.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-08-17T22:34:37.9269624Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250810.1
+2025-08-17T22:34:37.9270793Z ##[endgroup]
+2025-08-17T22:34:37.9273286Z ##[group]GITHUB_TOKEN Permissions
+2025-08-17T22:34:37.9275441Z Actions: write
+2025-08-17T22:34:37.9276280Z Attestations: write
+2025-08-17T22:34:37.9276792Z Checks: write
+2025-08-17T22:34:37.9277264Z Contents: write
+2025-08-17T22:34:37.9277820Z Deployments: write
+2025-08-17T22:34:37.9278326Z Discussions: write
+2025-08-17T22:34:37.9278830Z Issues: write
+2025-08-17T22:34:37.9279361Z Metadata: read
+2025-08-17T22:34:37.9279845Z Models: read
+2025-08-17T22:34:37.9280300Z Packages: write
+2025-08-17T22:34:37.9280844Z Pages: write
+2025-08-17T22:34:37.9281309Z PullRequests: write
+2025-08-17T22:34:37.9281868Z RepositoryProjects: write
+2025-08-17T22:34:37.9282418Z SecurityEvents: write
+2025-08-17T22:34:37.9283067Z Statuses: write
+2025-08-17T22:34:37.9283564Z ##[endgroup]
+2025-08-17T22:34:37.9285635Z Secret source: Actions
+2025-08-17T22:34:37.9286686Z Prepare workflow directory
+2025-08-17T22:34:37.9609663Z Prepare all required actions
+2025-08-17T22:34:37.9647028Z Getting action download info
+2025-08-17T22:34:38.4160130Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-08-17T22:34:38.9190357Z Download action repository 'lycheeverse/lychee-action@v1.9.0' (SHA:22134d37a1fff6c2974df9c92a7c7e1e86a08f9c)
+2025-08-17T22:34:39.5088374Z Complete job name: link-checker

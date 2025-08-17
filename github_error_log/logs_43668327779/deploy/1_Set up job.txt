@@ -1,0 +1,31 @@
+﻿2025-08-17T22:34:33.6548088Z Current runner version: '2.327.1'
+2025-08-17T22:34:33.6571580Z ##[group]Runner Image Provisioner
+2025-08-17T22:34:33.6572415Z Hosted Compute Agent
+2025-08-17T22:34:33.6573063Z Version: 20250812.370
+2025-08-17T22:34:33.6573775Z Commit: 4a2b2bf7520004e3e907c2150c8cabe342a3da32
+2025-08-17T22:34:33.6574471Z Build Date: 2025-08-12T16:08:14Z
+2025-08-17T22:34:33.6575130Z ##[endgroup]
+2025-08-17T22:34:33.6575657Z ##[group]Operating System
+2025-08-17T22:34:33.6576206Z Ubuntu
+2025-08-17T22:34:33.6576726Z 24.04.2
+2025-08-17T22:34:33.6577216Z LTS
+2025-08-17T22:34:33.6577683Z ##[endgroup]
+2025-08-17T22:34:33.6578254Z ##[group]Runner Image
+2025-08-17T22:34:33.6578827Z Image: ubuntu-24.04
+2025-08-17T22:34:33.6579352Z Version: 20250810.1.0
+2025-08-17T22:34:33.6580371Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250810.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-08-17T22:34:33.6581795Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250810.1
+2025-08-17T22:34:33.6583022Z ##[endgroup]
+2025-08-17T22:34:33.6584475Z ##[group]GITHUB_TOKEN Permissions
+2025-08-17T22:34:33.6586541Z Contents: write
+2025-08-17T22:34:33.6587148Z Metadata: read
+2025-08-17T22:34:33.6587648Z ##[endgroup]
+2025-08-17T22:34:33.6589694Z Secret source: Actions
+2025-08-17T22:34:33.6590443Z Prepare workflow directory
+2025-08-17T22:34:33.6913352Z Prepare all required actions
+2025-08-17T22:34:33.6954175Z Getting action download info
+2025-08-17T22:34:34.1286108Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-08-17T22:34:34.9913467Z Download action repository 'ruby/setup-ruby@v1' (SHA:829114fc20da43a41d27359103ec7a63020954d4)
+2025-08-17T22:34:35.7743810Z Download action repository 'fjogeleit/yaml-update-action@main' (SHA:04ff6ec06568fd21197db746472e36cc425de850)
+2025-08-17T22:34:36.6001865Z Download action repository 'JamesIves/github-pages-deploy-action@v4' (SHA:6c2d9db40f9296374acc17b90404b6e8864128c8)
+2025-08-17T22:34:38.5637232Z Complete job name: deploy

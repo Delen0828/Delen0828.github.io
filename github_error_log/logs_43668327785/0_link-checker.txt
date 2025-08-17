@@ -1,0 +1,1173 @@
+﻿2025-08-17T22:34:37.9235431Z Current runner version: '2.327.1'
+2025-08-17T22:34:37.9259122Z ##[group]Runner Image Provisioner
+2025-08-17T22:34:37.9259916Z Hosted Compute Agent
+2025-08-17T22:34:37.9260573Z Version: 20250812.370
+2025-08-17T22:34:37.9261144Z Commit: 4a2b2bf7520004e3e907c2150c8cabe342a3da32
+2025-08-17T22:34:37.9261831Z Build Date: 2025-08-12T16:08:14Z
+2025-08-17T22:34:37.9262421Z ##[endgroup]
+2025-08-17T22:34:37.9263008Z ##[group]Operating System
+2025-08-17T22:34:37.9263576Z Ubuntu
+2025-08-17T22:34:37.9264061Z 24.04.2
+2025-08-17T22:34:37.9264549Z LTS
+2025-08-17T22:34:37.9264971Z ##[endgroup]
+2025-08-17T22:34:37.9265500Z ##[group]Runner Image
+2025-08-17T22:34:37.9266055Z Image: ubuntu-24.04
+2025-08-17T22:34:37.9267121Z Version: 20250810.1.0
+2025-08-17T22:34:37.9268280Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250810.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-08-17T22:34:37.9269813Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250810.1
+2025-08-17T22:34:37.9270798Z ##[endgroup]
+2025-08-17T22:34:37.9273292Z ##[group]GITHUB_TOKEN Permissions
+2025-08-17T22:34:37.9275460Z Actions: write
+2025-08-17T22:34:37.9276286Z Attestations: write
+2025-08-17T22:34:37.9276796Z Checks: write
+2025-08-17T22:34:37.9277267Z Contents: write
+2025-08-17T22:34:37.9277823Z Deployments: write
+2025-08-17T22:34:37.9278329Z Discussions: write
+2025-08-17T22:34:37.9278853Z Issues: write
+2025-08-17T22:34:37.9279365Z Metadata: read
+2025-08-17T22:34:37.9279848Z Models: read
+2025-08-17T22:34:37.9280303Z Packages: write
+2025-08-17T22:34:37.9280847Z Pages: write
+2025-08-17T22:34:37.9281312Z PullRequests: write
+2025-08-17T22:34:37.9281871Z RepositoryProjects: write
+2025-08-17T22:34:37.9282422Z SecurityEvents: write
+2025-08-17T22:34:37.9283070Z Statuses: write
+2025-08-17T22:34:37.9283567Z ##[endgroup]
+2025-08-17T22:34:37.9285651Z Secret source: Actions
+2025-08-17T22:34:37.9286695Z Prepare workflow directory
+2025-08-17T22:34:37.9609689Z Prepare all required actions
+2025-08-17T22:34:37.9647073Z Getting action download info
+2025-08-17T22:34:38.4160161Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-08-17T22:34:38.9190388Z Download action repository 'lycheeverse/lychee-action@v1.9.0' (SHA:22134d37a1fff6c2974df9c92a7c7e1e86a08f9c)
+2025-08-17T22:34:39.5088403Z Complete job name: link-checker
+2025-08-17T22:34:39.5851976Z ##[group]Run actions/checkout@v4
+2025-08-17T22:34:39.5853298Z with:
+2025-08-17T22:34:39.5854114Z   repository: Delen0828/Delen0828.github.io
+2025-08-17T22:34:39.5855472Z   token: ***
+2025-08-17T22:34:39.5856398Z   ssh-strict: true
+2025-08-17T22:34:39.5857193Z   ssh-user: git
+2025-08-17T22:34:39.5858011Z   persist-credentials: true
+2025-08-17T22:34:39.5858909Z   clean: true
+2025-08-17T22:34:39.5859725Z   sparse-checkout-cone-mode: true
+2025-08-17T22:34:39.5860707Z   fetch-depth: 1
+2025-08-17T22:34:39.5861490Z   fetch-tags: false
+2025-08-17T22:34:39.5862296Z   show-progress: true
+2025-08-17T22:34:39.5863099Z   lfs: false
+2025-08-17T22:34:39.5863880Z   submodules: false
+2025-08-17T22:34:39.5864698Z   set-safe-directory: true
+2025-08-17T22:34:39.5865861Z ##[endgroup]
+2025-08-17T22:34:39.6940757Z Syncing repository: Delen0828/Delen0828.github.io
+2025-08-17T22:34:39.6943543Z ##[group]Getting Git version info
+2025-08-17T22:34:39.6945244Z Working directory is '/home/runner/work/Delen0828.github.io/Delen0828.github.io'
+2025-08-17T22:34:39.6947696Z [command]/usr/bin/git version
+2025-08-17T22:34:39.6982598Z git version 2.50.1
+2025-08-17T22:34:39.7008917Z ##[endgroup]
+2025-08-17T22:34:39.7023493Z Temporarily overriding HOME='/home/runner/work/_temp/f87065d4-2044-4790-adf8-00c2da225284' before making global git config changes
+2025-08-17T22:34:39.7026806Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-17T22:34:39.7035780Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Delen0828.github.io/Delen0828.github.io
+2025-08-17T22:34:39.7069763Z Deleting the contents of '/home/runner/work/Delen0828.github.io/Delen0828.github.io'
+2025-08-17T22:34:39.7072900Z ##[group]Initializing the repository
+2025-08-17T22:34:39.7077236Z [command]/usr/bin/git init /home/runner/work/Delen0828.github.io/Delen0828.github.io
+2025-08-17T22:34:39.7135897Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-08-17T22:34:39.7139355Z hint: is subject to change. To configure the initial branch name to use in all
+2025-08-17T22:34:39.7141195Z hint: of your new repositories, which will suppress this warning, call:
+2025-08-17T22:34:39.7142558Z hint:
+2025-08-17T22:34:39.7143740Z hint: 	git config --global init.defaultBranch <name>
+2025-08-17T22:34:39.7145250Z hint:
+2025-08-17T22:34:39.7146560Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-08-17T22:34:39.7148451Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-08-17T22:34:39.7150182Z hint:
+2025-08-17T22:34:39.7150927Z hint: 	git branch -m <name>
+2025-08-17T22:34:39.7151775Z hint:
+2025-08-17T22:34:39.7152949Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-08-17T22:34:39.7155131Z Initialized empty Git repository in /home/runner/work/Delen0828.github.io/Delen0828.github.io/.git/
+2025-08-17T22:34:39.7158796Z [command]/usr/bin/git remote add origin https://github.com/Delen0828/Delen0828.github.io
+2025-08-17T22:34:39.7183585Z ##[endgroup]
+2025-08-17T22:34:39.7185010Z ##[group]Disabling automatic garbage collection
+2025-08-17T22:34:39.7187201Z [command]/usr/bin/git config --local gc.auto 0
+2025-08-17T22:34:39.7215010Z ##[endgroup]
+2025-08-17T22:34:39.7216567Z ##[group]Setting up auth
+2025-08-17T22:34:39.7221365Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-17T22:34:39.7251548Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-17T22:34:39.7514769Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-08-17T22:34:39.7546333Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-08-17T22:34:39.7765519Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-08-17T22:34:39.7799772Z ##[endgroup]
+2025-08-17T22:34:39.7802175Z ##[group]Fetching the repository
+2025-08-17T22:34:39.7819843Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bce629ffaf8445cc5471cff443caab9201157ce0:refs/remotes/origin/main
+2025-08-17T22:34:41.4647207Z From https://github.com/Delen0828/Delen0828.github.io
+2025-08-17T22:34:41.4649688Z  * [new ref]         bce629ffaf8445cc5471cff443caab9201157ce0 -> origin/main
+2025-08-17T22:34:41.4672043Z ##[endgroup]
+2025-08-17T22:34:41.4672776Z ##[group]Determining the checkout info
+2025-08-17T22:34:41.4674683Z ##[endgroup]
+2025-08-17T22:34:41.4680270Z [command]/usr/bin/git sparse-checkout disable
+2025-08-17T22:34:41.4722105Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-08-17T22:34:41.4750246Z ##[group]Checking out the ref
+2025-08-17T22:34:41.4754005Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-08-17T22:34:41.8161891Z Switched to a new branch 'main'
+2025-08-17T22:34:41.8163254Z branch 'main' set up to track 'origin/main'.
+2025-08-17T22:34:41.8194648Z ##[endgroup]
+2025-08-17T22:34:41.8235712Z [command]/usr/bin/git log -1 --format=%H
+2025-08-17T22:34:41.8258824Z bce629ffaf8445cc5471cff443caab9201157ce0
+2025-08-17T22:34:41.8496080Z ##[group]Run lycheeverse/lychee-action@v1.9.0
+2025-08-17T22:34:41.8496694Z with:
+2025-08-17T22:34:41.8496865Z   fail: true
+2025-08-17T22:34:41.8497669Z   args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'
+2025-08-17T22:34:41.8498737Z   debug: false
+2025-08-17T22:34:41.8498917Z   format: markdown
+2025-08-17T22:34:41.8499107Z   jobSummary: true
+2025-08-17T22:34:41.8499290Z   lycheeVersion: 0.14.0
+2025-08-17T22:34:41.8499488Z   output: lychee/out.md
+2025-08-17T22:34:41.8499835Z   token: ***
+2025-08-17T22:34:41.8500012Z ##[endgroup]
+2025-08-17T22:34:41.8599536Z ##[group]Run # Cleanup artifacts from previous run in case it crashed
+2025-08-17T22:34:41.8600064Z [36;1m# Cleanup artifacts from previous run in case it crashed[0m
+2025-08-17T22:34:41.8600536Z [36;1mrm -rf "lychee-v0.14.0-x86_64-unknown-linux-gnu.tar.gz" lychee[0m
+2025-08-17T22:34:41.8601210Z [36;1mcurl -sLO "https://github.com/lycheeverse/lychee/releases/download/v0.14.0/lychee-v0.14.0-x86_64-unknown-linux-gnu.tar.gz"[0m
+2025-08-17T22:34:41.8601886Z [36;1mtar -xvzf "lychee-v0.14.0-x86_64-unknown-linux-gnu.tar.gz"[0m
+2025-08-17T22:34:41.8602307Z [36;1mrm "lychee-v0.14.0-x86_64-unknown-linux-gnu.tar.gz"[0m
+2025-08-17T22:34:41.8602628Z [36;1minstall -t "$HOME/.local/bin" -D lychee [0m
+2025-08-17T22:34:41.8602887Z [36;1mrm lychee[0m
+2025-08-17T22:34:41.8603099Z [36;1mecho "$HOME/.local/bin" >> "$GITHUB_PATH"[0m
+2025-08-17T22:34:41.8672662Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-08-17T22:34:41.8673010Z ##[endgroup]
+2025-08-17T22:34:42.1151029Z lychee
+2025-08-17T22:34:42.3141049Z ##[group]Run /home/runner/work/_actions/lycheeverse/lychee-action/v1.9.0/entrypoint.sh
+2025-08-17T22:34:42.3141810Z [36;1m/home/runner/work/_actions/lycheeverse/lychee-action/v1.9.0/entrypoint.sh[0m
+2025-08-17T22:34:42.3214285Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-08-17T22:34:42.3215276Z env:
+2025-08-17T22:34:42.3215536Z   INPUT_GITHUB_TOKEN: 
+2025-08-17T22:34:42.3218586Z   INPUT_ARGS: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'
+2025-08-17T22:34:42.3220463Z   INPUT_DEBUG: false
+2025-08-17T22:34:42.3221223Z   INPUT_FAIL: true
+2025-08-17T22:34:42.3221508Z   INPUT_FORMAT: markdown
+2025-08-17T22:34:42.3221842Z   INPUT_JOBSUMMARY: true
+2025-08-17T22:34:42.3222091Z   INPUT_OUTPUT: lychee/out.md
+2025-08-17T22:34:42.3222929Z ##[endgroup]
+2025-08-17T22:34:42.4744436Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/FAQ.md | Failed: Cannot find file
+2025-08-17T22:34:42.4747833Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_data/cv.yml
+2025-08-17T22:34:42.4749317Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_data/coauthors.yml
+2025-08-17T22:34:42.4751492Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_sass/_themes.scss
+2025-08-17T22:34:42.4752624Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_projects
+2025-08-17T22:34:42.4756750Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_layouts/bib.liquid
+2025-08-17T22:34:42.4757881Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_bibliography/papers.bib
+2025-08-17T22:34:42.4758802Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/FAQ.md | Failed: Cannot find file
+2025-08-17T22:34:42.4759744Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/assets/json/resume.json
+2025-08-17T22:34:42.4760527Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_layouts
+2025-08-17T22:34:42.4761392Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_config.yml
+2025-08-17T22:34:42.4762028Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_data/repositories.yml
+2025-08-17T22:34:42.4762595Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_news
+2025-08-17T22:34:42.4763386Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_posts
+2025-08-17T22:34:42.4763930Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_pages
+2025-08-17T22:34:42.4764557Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/INSTALL.md | Failed: Cannot find file
+2025-08-17T22:34:42.4765233Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_sass/_variables.scss
+2025-08-17T22:34:42.4766375Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_pages/projects.md
+2025-08-17T22:34:42.4776021Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_pages#{{%20category%20}}
+2025-08-17T22:34:42.4777296Z ? [EXCLUDED] https://twitter.com/rubygems/status/518821243320287232 | Excluded
+2025-08-17T22:34:42.4778001Z ? [EXCLUDED] https://twitter.com/jekyllrb | Excluded
+2025-08-17T22:34:42.4837722Z ? [EXCLUDED] http://www.example.com/ | Excluded
+2025-08-17T22:34:42.4880634Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/2021/05/22/distill.html#equations
+2025-08-17T22:34:42.5044703Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/2021/05/22/distill.html#footnotes
+2025-08-17T22:34:42.5047002Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/2021/05/22/distill.html#layouts
+2025-08-17T22:34:42.5096628Z ✔ [200] https://en.wikipedia.org/wiki/Cold-pressed_juice
+2025-08-17T22:34:42.5097839Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/2021/05/22/distill.html#code-blocks
+2025-08-17T22:34:42.5123779Z ✔ [200] https://en.wikipedia.org/wiki/Cold-pressed_juice
+2025-08-17T22:34:42.5163298Z ✔ [200] https://en.wikipedia.org/wiki/Cold-pressed_juice
+2025-08-17T22:34:42.5211326Z ? [EXCLUDED] http://www.example.com/ | Excluded
+2025-08-17T22:34:42.5214990Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.5219075Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/2021/05/22/distill.html#other-typography
+2025-08-17T22:34:42.5220894Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/2021/05/22/distill.html#interactive-plots
+2025-08-17T22:34:42.5231851Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/2021/05/22/distill.html#citations
+2025-08-17T22:34:42.5863272Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.5870254Z ✔ [200] https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3
+2025-08-17T22:34:42.5938507Z ✔ [200] https://jekyllrb.com/docs/permalinks/
+2025-08-17T22:34:42.5960168Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.5967986Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6029536Z ✔ [200] https://www.pinterest.com/
+2025-08-17T22:34:42.6032686Z ✔ [200] https://jekyllrb.com/docs/posts/#creating-posts
+2025-08-17T22:34:42.6054689Z ✔ [200] https://jekyllrb.com/
+2025-08-17T22:34:42.6088315Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6110946Z ✔ [200] https://shuaili8.github.io/
+2025-08-17T22:34:42.6111938Z ✔ [200] https://www.pinterest.com/
+2025-08-17T22:34:42.6118929Z ✔ [200] https://www.mozilla.org/
+2025-08-17T22:34:42.6119964Z ✔ [200] https://jekyll.github.io/github-metadata/
+2025-08-17T22:34:42.6161737Z ✔ [200] https://afeld.github.io/bootstrap-toc/
+2025-08-17T22:34:42.6162790Z ✔ [200] https://pages.github.com/
+2025-08-17T22:34:42.6205993Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6224514Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6316786Z ? [EXCLUDED] http://www.w3.org/2000/svg | Excluded
+2025-08-17T22:34:42.6367030Z ✔ [200] https://unsplash.com/
+2025-08-17T22:34:42.6368164Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6370670Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6393540Z ✔ [200] https://unsplash.com/
+2025-08-17T22:34:42.6435998Z ✔ [200] https://unsplash.com/
+2025-08-17T22:34:42.6439846Z ✔ [200] https://prettier.io/
+2025-08-17T22:34:42.6467224Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6467942Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6470970Z ✔ [403] http://www.reddit.com/ | OK (403 Forbidden): Forbidden
+2025-08-17T22:34:42.6493076Z ✔ [200] https://www.google.com/
+2025-08-17T22:34:42.6505964Z ✔ [200] https://geojson.io/
+2025-08-17T22:34:42.6516775Z ✔ [403] http://reddit.com/ | OK (403 Forbidden): Forbidden
+2025-08-17T22:34:42.6518856Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6520872Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6521254Z ✔ [200] https://pages.github.com/
+2025-08-17T22:34:42.6537028Z ✔ [200] https://pages.github.com/
+2025-08-17T22:34:42.6547102Z ✔ [200] https://unsplash.com/
+2025-08-17T22:34:42.6547720Z ✔ [200] https://jpswalsh.github.io/academicons/
+2025-08-17T22:34:42.6566045Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6575207Z ✔ [200] https://jpswalsh.github.io/academicons/
+2025-08-17T22:34:42.6575862Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6588407Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6590059Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6608967Z ✔ [200] https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html
+2025-08-17T22:34:42.6609807Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6617664Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6619015Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6619823Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6621735Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6623654Z ✔ [200] https://unsplash.com/
+2025-08-17T22:34:42.6624909Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.6626064Z ✔ [200] https://cyxiong.com/
+2025-08-17T22:34:42.6634271Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6663660Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6666478Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.6667307Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6668315Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6669582Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6737684Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6740121Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6747653Z ✔ [403] http://reddit.com/ | OK (403 Forbidden): Forbidden
+2025-08-17T22:34:42.6748301Z ✔ [200] https://unsplash.com/
+2025-08-17T22:34:42.6750353Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6752564Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6753717Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.6755311Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.6764644Z ✔ [200] https://saswat.padhi.me/pseudocode.js/
+2025-08-17T22:34:42.6765344Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6766622Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.6768158Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6794102Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6796646Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6800953Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.6802525Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.6804462Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.6805478Z ✔ [200] https://jekyllrb.com/docs/posts/#drafts
+2025-08-17T22:34:42.6812345Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6814435Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6816342Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6819158Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6829068Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6830194Z ✔ [200] https://pages.github.com/
+2025-08-17T22:34:42.6830773Z ✔ [200] https://jekyllrb.com/docs/layouts/
+2025-08-17T22:34:42.6831363Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6832247Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.6833107Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6837062Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6839385Z ✔ [200] https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html
+2025-08-17T22:34:42.6840140Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6840969Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6842998Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6845516Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6846596Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.6848204Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6895139Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.6904859Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6906376Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6907460Z ✔ [200] https://www.mathjax.org/
+2025-08-17T22:34:42.6908043Z ✔ [200] https://examples.bootstrap-table.com/index.html
+2025-08-17T22:34:42.6908635Z ✔ [200] https://www.mathjax.org/
+2025-08-17T22:34:42.6909376Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6925337Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6935504Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6938418Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.6939390Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6940306Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.6941851Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.6943424Z ✔ [200] https://www.chartjs.org/
+2025-08-17T22:34:42.6945887Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.6951965Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6952580Z ✔ [200] https://bootstrap-table.com/
+2025-08-17T22:34:42.6965014Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6968598Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.6969276Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7001524Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7003177Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7004280Z ✔ [200] https://diff2html.xyz/
+2025-08-17T22:34:42.7048688Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7054729Z ✔ [200] https://swiperjs.com/demos
+2025-08-17T22:34:42.7057226Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7087322Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.7088762Z ✔ [200] https://getbootstrap.com/docs/4.4/layout/grid/
+2025-08-17T22:34:42.7096407Z ✔ [200] https://getbootstrap.com/docs/4.4/layout/grid/
+2025-08-17T22:34:42.7097756Z ✔ [200] https://jekyllrb.com/docs/configuration/markdown/
+2025-08-17T22:34:42.7098966Z ✔ [200] https://getbootstrap.com/docs/4.4/layout/grid/
+2025-08-17T22:34:42.7101047Z ✔ [200] https://getbootstrap.com/docs/4.4/layout/grid/
+2025-08-17T22:34:42.7104181Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7107616Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7110874Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7228534Z ✔ [200] https://github.githubassets.com/images/icons/emoji/unicode/1f5bc.png
+2025-08-17T22:34:42.7229526Z ✔ [200] https://getbootstrap.com/docs/4.4/layout/grid/
+2025-08-17T22:34:42.7237043Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.7238325Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7239073Z ✔ [200] https://jsonresume.org/
+2025-08-17T22:34:42.7239632Z ✔ [200] https://getbootstrap.com/docs/4.4/layout/grid/
+2025-08-17T22:34:42.7240459Z ✔ [200] https://jekyllrb.com/docs/front-matter/
+2025-08-17T22:34:42.7242686Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7245131Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7246283Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7247312Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7248363Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7250828Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7253216Z ✔ [200] https://pages.github.com/
+2025-08-17T22:34:42.7253795Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7255050Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7256952Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7257598Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7259857Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7262293Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7263185Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7267048Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7268346Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7269972Z ✔ [200] https://stackoverflow.com/questions/34987908/embed-a-code-block-in-a-list-item-with-proper-indentation-in-kramdown/38090598#38090598
+2025-08-17T22:34:42.7272100Z ✔ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap
+2025-08-17T22:34:42.7273386Z ✔ [200] https://swiperjs.com/
+2025-08-17T22:34:42.7299444Z ✔ [200] https://www.dimensions.ai/
+2025-08-17T22:34:42.7301575Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7317767Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7319604Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7320818Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7321446Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7322281Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7324226Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7404374Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7410733Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7412313Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7413801Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7414695Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7415566Z ✔ [200] https://jekyllrb.com/
+2025-08-17T22:34:42.7416041Z ✔ [200] https://jekyllrb.com/
+2025-08-17T22:34:42.7463772Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7477230Z ✔ [200] https://vega.github.io/vega-lite/
+2025-08-17T22:34:42.7502855Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7506483Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7507743Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7516036Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7521887Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7522531Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7523810Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7592883Z ✔ [200] https://img-comparison-slider.sneas.io/
+2025-08-17T22:34:42.7596074Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7598710Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7599385Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7600302Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7601799Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7603120Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7613118Z ✔ [200] https://delen0828.github.io/2021/07/04/diagrams.html
+2025-08-17T22:34:42.7617345Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7620173Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7621374Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7622055Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7634712Z ✔ [200] https://echarts.apache.org/
+2025-08-17T22:34:42.7648231Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7648902Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7649803Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7651601Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7652733Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7654734Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7658751Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7660940Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7661610Z ✔ [200] https://delen0828.github.io/2022/02/01/redirect.html
+2025-08-17T22:34:42.7662209Z ✔ [200] https://delen0828.github.io/404.html
+2025-08-17T22:34:42.7662771Z ✔ [200] https://delen0828.github.io/2021/05/22/distill.html
+2025-08-17T22:34:42.7663679Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7665153Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7666408Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7667031Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7668478Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7669598Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7685640Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7687126Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7688008Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7690143Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7692608Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7693632Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7694494Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7697367Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7701567Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7704968Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7706733Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7709510Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7711842Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7712748Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7713650Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7714289Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7715135Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7716071Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7718474Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7732286Z ✔ [200] https://geojson.org/
+2025-08-17T22:34:42.7733420Z ✔ [200] https://leafletjs.com/
+2025-08-17T22:34:42.7761343Z ✗ [404] https://delen0828.github.io/_pages/dropdown.html | Failed: Network error: Not Found
+2025-08-17T22:34:42.7766111Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7771279Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7777204Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7792558Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7794824Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7795748Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7797352Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7798466Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7799085Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7860664Z ✔ [200] https://delen0828.github.io/
+2025-08-17T22:34:42.7861422Z ✔ [200] https://img-comparison-slider.sneas.io/examples.html
+2025-08-17T22:34:42.7862205Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7891658Z ✔ [200] https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html
+2025-08-17T22:34:42.7892752Z ✔ [200] https://delen0828.github.io/blog/2021/
+2025-08-17T22:34:42.7893864Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7894751Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7895381Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7896990Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.7899552Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.7913272Z ✔ [200] https://delen0828.github.io/blog/2020/
+2025-08-17T22:34:42.7913720Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.7914244Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/cv
+2025-08-17T22:34:42.7915015Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.7948851Z ✔ [200] https://delen0828.github.io/blog/
+2025-08-17T22:34:42.7949692Z ✔ [200] https://delen0828.github.io/blog/2024/
+2025-08-17T22:34:42.8010606Z ✔ [200] https://delen0828.github.io/blog/2015/
+2025-08-17T22:34:42.8011866Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8013089Z ? [IGNORED] tel:(413)%20210-0295 | Unsupported: The given URI is invalid: tel:(413)%20210-0295
+2025-08-17T22:34:42.8221298Z ✔ [200] https://delen0828.github.io/blog/tag/audios/
+2025-08-17T22:34:42.8222347Z ✔ [200] https://delen0828.github.io/blog/2022/
+2025-08-17T22:34:42.8241068Z ✔ [200] https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html
+2025-08-17T22:34:42.8241895Z ✔ [200] https://delen0828.github.io/blog/2023/
+2025-08-17T22:34:42.8244025Z ✔ [200] https://delen0828.github.io/blog/category/external-services/
+2025-08-17T22:34:42.8278684Z ✔ [200] https://delen0828.github.io/blog/tag/bib/
+2025-08-17T22:34:42.8294548Z ? [EXCLUDED] shu343@gatech.edu | Excluded
+2025-08-17T22:34:42.8296639Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8297310Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8297899Z ? [EXCLUDED] shu343@gatech.edu | Excluded
+2025-08-17T22:34:42.8300671Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8305755Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8306724Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8307968Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/motion-1400.webp
+2025-08-17T22:34:42.8309115Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8310340Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8312298Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/VisChatter-800.webp
+2025-08-17T22:34:42.8321932Z ✔ [200] https://delen0828.github.io/blog/tag/blockquotes/
+2025-08-17T22:34:42.8323428Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/hier-ucb-800.webp
+2025-08-17T22:34:42.8325114Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/VisChatter-1400.webp
+2025-08-17T22:34:42.8326930Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8328543Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/selfie-1400.webp
+2025-08-17T22:34:42.8329104Z ↻ [200] https://shuaili8.github.io/ | Cached: OK (cached)
+2025-08-17T22:34:42.8329475Z ↻ [200] https://cyxiong.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8330545Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/Hier-SUCB-800.webp
+2025-08-17T22:34:42.8331579Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/motion-800.webp
+2025-08-17T22:34:42.8332176Z ↻ [200] https://delen0828.github.io/ | Cached: OK (cached)
+2025-08-17T22:34:42.8332701Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.8333492Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/hier-ucb-1400.webp
+2025-08-17T22:34:42.8334267Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/selfie-800.webp
+2025-08-17T22:34:42.8335050Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/assets/img/publication_preview/Hier-SUCB-1400.webp
+2025-08-17T22:34:42.8335955Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8350499Z ✔ [200] https://delen0828.github.io/blog/category/sample-posts/
+2025-08-17T22:34:42.8351985Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8353231Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8378975Z ✔ [200] https://mermaid-js.github.io/mermaid/
+2025-08-17T22:34:42.8384191Z ✔ [200] https://mermaid-js.github.io/mermaid/
+2025-08-17T22:34:42.8384813Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8385408Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.8385900Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8457024Z ✔ [200] https://delen0828.github.io/blog/tag/charts/
+2025-08-17T22:34:42.8457708Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8511747Z ✔ [200] https://delen0828.github.io/blog/tag/code/
+2025-08-17T22:34:42.8512354Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8545703Z ✔ [200] https://delen0828.github.io/blog/tag/comments/
+2025-08-17T22:34:42.8547298Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8548519Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8549053Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.8550082Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8607900Z ✔ [200] https://fontawesome.com/
+2025-08-17T22:34:42.8609185Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8625116Z ✔ [200] https://delen0828.github.io/blog/tag/formatting/
+2025-08-17T22:34:42.8626870Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8627813Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.8630141Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8659792Z ✔ [200] https://delen0828.github.io/blog/tag/distill/
+2025-08-17T22:34:42.8660517Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8661252Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8701592Z ✔ [200] https://delen0828.github.io/blog/tag/diagrams/
+2025-08-17T22:34:42.8727114Z ✔ [200] https://fontawesome.com/
+2025-08-17T22:34:42.8729380Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8730598Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.8731118Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8731462Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8732064Z ✔ [200] https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png
+2025-08-17T22:34:42.8732582Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8733788Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8782614Z ✔ [200] https://delen0828.github.io/blog/tag/metadata/
+2025-08-17T22:34:42.8784686Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8785989Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8786632Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.8787599Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8795955Z ✔ [200] https://delen0828.github.io/blog/tag/tables/
+2025-08-17T22:34:42.8796693Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8818092Z ✔ [200] https://delen0828.github.io/blog/tag/links/
+2025-08-17T22:34:42.8825985Z ✔ [200] http://slashdot.org/
+2025-08-17T22:34:42.8826750Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8827439Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8829677Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.8831750Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8872023Z ✔ [200] https://delen0828.github.io/blog/tag/maps/
+2025-08-17T22:34:42.8872770Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.8873563Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.8874036Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.8924119Z ✔ [200] https://delen0828.github.io/blog/tag/sidebar/
+2025-08-17T22:34:42.9002948Z ✔ [200] https://www.gatech.edu/
+2025-08-17T22:34:42.9003678Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9015042Z ✔ [200] https://delen0828.github.io/blog/tag/math/
+2025-08-17T22:34:42.9017086Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9018891Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9019676Z ✔ [200] https://vis.gatech.edu/
+2025-08-17T22:34:42.9020211Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9020839Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9021453Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9022550Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9085484Z ✔ [200] https://delen0828.github.io/blog/tag/jupyter/
+2025-08-17T22:34:42.9087052Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9088298Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9139433Z ✔ [200] https://delen0828.github.io/blog/tag/videos/
+2025-08-17T22:34:42.9140154Z ✔ [200] https://github.com/alshedivat/al-folio/discussions
+2025-08-17T22:34:42.9140815Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9141237Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9141987Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9214538Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9225376Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9226465Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9227871Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9229504Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9230096Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9230502Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9230858Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9231333Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9231657Z ↻ [403] http://reddit.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9232059Z ↻ [200] https://jpswalsh.github.io/academicons/ | Cached: OK (cached)
+2025-08-17T22:34:42.9232511Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9232886Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9233556Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/people/assets/img/selfie-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9234202Z ↻ [200] https://fontawesome.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9234586Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9235707Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9237093Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9238110Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/people/assets/img/selfie-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9239055Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9239816Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9240355Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9240798Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9241951Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9243243Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects#work
+2025-08-17T22:34:42.9244026Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/12-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9245474Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9247113Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects#fun
+2025-08-17T22:34:42.9248250Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/12-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9249182Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/3-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9249789Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9250136Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9250631Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9251409Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/3-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9252488Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/7-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9253444Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/1-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9254251Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9254960Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/7-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9255624Z ✔ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css
+2025-08-17T22:34:42.9256833Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/1-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9257513Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9258578Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/Hier-SUCB-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9259475Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9260739Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9262451Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/VisChatter-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9263615Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/Hier-SUCB-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9264751Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/motion-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9265469Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9265831Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9266940Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/hier-ucb-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9268136Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/VisChatter-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9268896Z ✔ [200] https://delen0828.github.io/blog/tag/images/
+2025-08-17T22:34:42.9269570Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9374490Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9378088Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/motion-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9381258Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/hier-ucb-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9383128Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9383792Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9384492Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9389302Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9390221Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9390827Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9391642Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9392482Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9393087Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9393672Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9394533Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9395622Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9396378Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9396947Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9397625Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9398506Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9399080Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9399656Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9400238Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9400805Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9401424Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9401975Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9402526Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9403185Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9403761Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9404326Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9404907Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9405457Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9406109Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9406845Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9407382Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9407959Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9408504Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9409057Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9409608Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9415636Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9422011Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9422862Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9423621Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9424191Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9424794Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9425399Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9425958Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9426819Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9434369Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9436956Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9450243Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9451044Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9451707Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9462870Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9468963Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9484909Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9488811Z ↻ [200] https://www.pinterest.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9489528Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9497924Z ✔ [200] https://delen0828.github.io/news/announcement_2/
+2025-08-17T22:34:42.9498939Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9501631Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9504081Z ↻ [200] https://en.wikipedia.org/wiki/Cold-pressed_juice | Cached: OK (cached)
+2025-08-17T22:34:42.9505000Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9505793Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9506859Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9508398Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/12-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9511190Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9515009Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/10-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9517203Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/11-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9519573Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9521527Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/7-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9523743Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/8-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9525707Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/8-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9527539Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9529081Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/12-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9530372Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9531286Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9533264Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/11-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9534571Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9535925Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/9-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9538156Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/10-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9540296Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/7-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9542293Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/9-800.webp | Failed: Cannot find file
+2025-08-17T22:34:42.9544442Z ↻ [200] https://stackoverflow.com/questions/34987908/embed-a-code-block-in-a-list-item-with-proper-indentation-in-kramdown/38090598#38090598 | Cached: OK (cached)
+2025-08-17T22:34:42.9546766Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9549368Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9551730Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9552533Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9553148Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9553822Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9555111Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9557076Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9557840Z ↻ [200] https://www.mathjax.org/ | Cached: OK (cached)
+2025-08-17T22:34:42.9558450Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9559650Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9560637Z ✔ [200] https://delen0828.github.io/news/announcement_1/
+2025-08-17T22:34:42.9578826Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9755670Z ✔ [200] https://delen0828.github.io/cv/
+2025-08-17T22:34:42.9836984Z ✔ [200] https://delen0828.github.io/news/announcement_3/
+2025-08-17T22:34:42.9842405Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9843145Z ✔ [200] https://delen0828.github.io/news/announcement_5/
+2025-08-17T22:34:42.9860833Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9902111Z ✔ [200] https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss
+2025-08-17T22:34:42.9904168Z ✔ [200] https://delen0828.github.io/blog/tag/toc/
+2025-08-17T22:34:42.9904852Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9905878Z ↻ [200] https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html | Cached: OK (cached)
+2025-08-17T22:34:42.9906968Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9909052Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9911343Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9912001Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:42.9912638Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9914069Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2023/03/20/table-of-contents.html#example-of-another-sub-heading-2
+2025-08-17T22:34:42.9915551Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9917534Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2023/03/20/table-of-contents.html#example-of-sub-heading-2
+2025-08-17T22:34:42.9919851Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2023/03/20/table-of-contents.html#table-of-contents-options
+2025-08-17T22:34:42.9921272Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9923169Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2023/03/20/table-of-contents.html#example-of-another-sub-heading-1
+2025-08-17T22:34:42.9925279Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9928093Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9930998Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2023/03/20/table-of-contents.html#example-of-sub-heading-1
+2025-08-17T22:34:42.9933707Z ✔ [200] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2023/03/20/table-of-contents.html#adding-a-table-of-contents
+2025-08-17T22:34:42.9935028Z ↻ [200] https://www.pinterest.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9936000Z ↻ [200] https://en.wikipedia.org/wiki/Cold-pressed_juice | Cached: OK (cached)
+2025-08-17T22:34:42.9937218Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9938314Z ↻ [200] https://examples.bootstrap-table.com/index.html | Cached: OK (cached)
+2025-08-17T22:34:42.9939192Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9940196Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9941101Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9941973Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9944591Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9947407Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9948887Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9950115Z ↻ [200] https://bootstrap-table.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9952483Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9955246Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9956305Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9956905Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9957592Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9958932Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9960221Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9961260Z ↻ [200] https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3 | Cached: OK (cached)
+2025-08-17T22:34:42.9962433Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:42.9965165Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:42.9968019Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9968784Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:42.9970104Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:42.9971255Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9972180Z ✗ [404] https://delen0828.github.io/news/announcement_6/ | Failed: Network error: Not Found
+2025-08-17T22:34:42.9973073Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9974026Z ↻ [200] https://www.pinterest.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9974951Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:42.9976007Z ↻ [200] https://en.wikipedia.org/wiki/Cold-pressed_juice | Cached: OK (cached)
+2025-08-17T22:34:42.9987396Z ✗ [404] https://delen0828.github.io/news/announcement_8/ | Failed: Network error: Not Found
+2025-08-17T22:34:42.9988393Z ✔ [200] https://delen0828.github.io/news/announcement_4/
+2025-08-17T22:34:43.0014533Z ✔ [200] https://github-profile-trophy.vercel.app/?username=torvalds&theme=flat&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6
+2025-08-17T22:34:43.0017539Z ✔ [200] https://github-profile-trophy.vercel.app/?username=torvalds&theme=gitdimmed&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6
+2025-08-17T22:34:43.0019739Z ✔ [200] https://github-profile-trophy.vercel.app/?username=torvalds&theme=flat&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=4
+2025-08-17T22:34:43.0021394Z ↻ [200] https://afeld.github.io/bootstrap-toc/ | Cached: OK (cached)
+2025-08-17T22:34:43.0022552Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0024393Z ✔ [200] https://github-profile-trophy.vercel.app/?username=alshedivat&theme=flat&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=3
+2025-08-17T22:34:43.0026861Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0028520Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0031172Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0033704Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0035108Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0037855Z ✔ [200] https://github-profile-trophy.vercel.app/?username=alshedivat&theme=gitdimmed&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=3
+2025-08-17T22:34:43.0039860Z ✔ [200] https://github-profile-trophy.vercel.app/?username=alshedivat&theme=gitdimmed&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6
+2025-08-17T22:34:43.0041647Z ✔ [200] https://github-profile-trophy.vercel.app/?username=torvalds&theme=gitdimmed&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=4
+2025-08-17T22:34:43.0054831Z ✔ [200] https://github-profile-trophy.vercel.app/?username=alshedivat&theme=gitdimmed&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=4
+2025-08-17T22:34:43.0056467Z ✔ [200] https://github.com/sighingnow/jekyll-gitbook
+2025-08-17T22:34:43.0057730Z ↻ [200] https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss | Cached: OK (cached)
+2025-08-17T22:34:43.0058920Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0059767Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0060407Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0061830Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0063580Z ↻ [200] https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html | Cached: OK (cached)
+2025-08-17T22:34:43.0064705Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0065568Z ↻ [200] https://github.com/sighingnow/jekyll-gitbook | Cached: OK (cached)
+2025-08-17T22:34:43.0066905Z ✔ [200] https://github-profile-trophy.vercel.app/?username=alshedivat&theme=flat&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6
+2025-08-17T22:34:43.0067889Z ✔ [200] https://github-profile-trophy.vercel.app/?username=torvalds&theme=gitdimmed&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=3
+2025-08-17T22:34:43.0068844Z ✔ [200] https://github-profile-trophy.vercel.app/?username=alshedivat&theme=flat&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=4
+2025-08-17T22:34:43.0069464Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0070167Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0070844Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0071245Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0071778Z ↻ [200] https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html | Cached: OK (cached)
+2025-08-17T22:34:43.0072385Z ↻ [200] https://jekyllrb.com/docs/configuration/markdown/ | Cached: OK (cached)
+2025-08-17T22:34:43.0072803Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0074104Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0075438Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0076540Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0077405Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0077805Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0078188Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0078610Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0079293Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0080044Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0081333Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0082458Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0083106Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0084441Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0086394Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0086802Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0087177Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0087801Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0088549Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0089059Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0092614Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0095366Z ✔ [200] https://github-profile-trophy.vercel.app/?username=torvalds&theme=flat&locale=en&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=3
+2025-08-17T22:34:43.0096977Z ↻ [200] https://www.chartjs.org/ | Cached: OK (cached)
+2025-08-17T22:34:43.0098273Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0099894Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0101987Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0104287Z ✔ [200] https://github.com/alshedivat/al-folio
+2025-08-17T22:34:43.0104962Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0105713Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0107513Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0109153Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0111520Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0114105Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0114782Z ↻ [200] https://echarts.apache.org/ | Cached: OK (cached)
+2025-08-17T22:34:43.0115799Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0118440Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0120723Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0121700Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0122588Z ✔ [200] https://github.com/SaswatPadhi/pseudocode.js
+2025-08-17T22:34:43.0123907Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0125424Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0126289Z ↻ [200] https://leafletjs.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0126975Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0127731Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0128502Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0129143Z ↻ [200] https://geojson.io/ | Cached: OK (cached)
+2025-08-17T22:34:43.0130020Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0130906Z ✔ [200] https://github.com/zhustec/jekyll-diagrams
+2025-08-17T22:34:43.0131539Z ✔ [200] https://github.com/zhustec/jekyll-diagrams
+2025-08-17T22:34:43.0132147Z ↻ [200] https://geojson.org/ | Cached: OK (cached)
+2025-08-17T22:34:43.0133469Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/12-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0135818Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/7-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0137352Z ↻ [200] https://img-comparison-slider.sneas.io/ | Cached: OK (cached)
+2025-08-17T22:34:43.0138905Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic_color-800.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0140189Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0140852Z ↻ [200] https://swiperjs.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0141506Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0142164Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0143691Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/9-800.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0144964Z ↻ [200] https://swiperjs.com/demos | Cached: OK (cached)
+2025-08-17T22:34:43.0146555Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/10-800.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0149458Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0152420Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0154292Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic-800.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0156487Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0158353Z ↻ [200] https://img-comparison-slider.sneas.io/examples.html | Cached: OK (cached)
+2025-08-17T22:34:43.0159949Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/8-800.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0161890Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/10-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0163929Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic_color-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0165359Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0166502Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0168075Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/8-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0170085Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/7-800.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0172038Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/12-800.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0173977Z ✗ [ERR] file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/9-1400.webp | Failed: Cannot find file
+2025-08-17T22:34:43.0175344Z ↻ [200] https://diff2html.xyz/ | Cached: OK (cached)
+2025-08-17T22:34:43.0177586Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0262565Z ✗ [404] https://delen0828.github.io/news/announcement_7/ | Failed: Network error: Not Found
+2025-08-17T22:34:43.0283586Z ✔ [200] https://delen0828.github.io/publications/
+2025-08-17T22:34:43.0286020Z ✔ [200] https://delen0828.github.io/people/
+2025-08-17T22:34:43.0287095Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0287698Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0288337Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0288881Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0289660Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0290362Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0291259Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0292014Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0292889Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0294008Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0295286Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0297821Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0299787Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0300198Z ↻ [200] https://vega.github.io/vega-lite/ | Cached: OK (cached)
+2025-08-17T22:34:43.0300743Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0313207Z ✔ [200] https://github.com/rob-murray/jekyll-twitter-plugin
+2025-08-17T22:34:43.0313760Z ↻ [200] https://saswat.padhi.me/pseudocode.js/ | Cached: OK (cached)
+2025-08-17T22:34:43.0314187Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0314619Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0315036Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0315407Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0316080Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0317028Z ↻ [200] https://github.com/SaswatPadhi/pseudocode.js | Cached: OK (cached)
+2025-08-17T22:34:43.0318231Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0320297Z ✔ [200] https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css
+2025-08-17T22:34:43.0320777Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0321186Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0366866Z ✔ [200] https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css
+2025-08-17T22:34:43.0368310Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0369693Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0370173Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0370520Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0371198Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0376760Z ✔ [200] https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css
+2025-08-17T22:34:43.0378362Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0379578Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0380080Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0380866Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0385136Z ✔ [200] https://github.com/toshimaru/jekyll-toc
+2025-08-17T22:34:43.0385826Z ✔ [200] https://github.com/toshimaru/jekyll-toc
+2025-08-17T22:34:43.0386745Z ↻ [200] https://jekyll.github.io/github-metadata/ | Cached: OK (cached)
+2025-08-17T22:34:43.0387215Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0387796Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0388242Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0399021Z ✔ [200] https://delen0828.github.io/projects/
+2025-08-17T22:34:43.0400073Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0400961Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0401772Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0403409Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0404647Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0405378Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0406021Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0423489Z ? [IGNORED] data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEhklEQVR4AWJxL/BhIAesev1U5tcflpncgNrKIsqNIwzC9feMpDUzs70kOczMzMzJJcxwCTMzncPMnOwtzBwzMzPb0vRfeZPp0VhPS5I39V5fdiXV1/VD+9QC7OVn9BsyH1XIoEI1PfmJvLFowVV564+34DFUHudbmfDh4kVXh//7XwE+WjS/YfXZe3yr4j2rqj1AIhSB7hZ8ZtPZu/zw8cK523U4wE1/rvPfWrz4zs0m9ZdC9yUJAlASdBAgocRegfF/f3/h/PuaFsxMdwjAR0vm1+06eMMfIrhLqTWqdH4EumU2SPfMhigJAlRQbZrgrRsl9U+Y2DYDFCz3ILC9kiAiqSrMwbWT0nceEnR+9Kggc2zjOJCASDENkg0a5HfZZgDP81CM3CrQs2Z1+o7DJ6ePr8sK0AOCHv5Jjdt3evyYSaZ351VIStIxPRAUtrBYbxC6w+BZ0ivVSBKkIhJhemSyZpfB00EiPO2VjzYkxhcqXQqCWCShGplvi3y0QxqbuBurMjyJeWnkHZuAEgIQGsUBqwrfjZ+IlBgKyRJzVVYF8O6qFWdh86YzQzMrZigYmxAyfvHgLZQ/LC1CbeniW2Hkqr/PH16SgvGuf2/uzNMBwJA/njxizGPtSyAf7EziJCMGRDRdhoAC4PL1A/SrKQMAAQkEfpJAcRQdrBJ7gNwjSpJsdwK+CANBkqa1LgQB4IicV9nYUct7gaxuDJUErQIiEAiMxLVOFlKzIktPpT0ggpdpC/8YAHnxbgkUY4tAAFSR7AAXNyAAWHJrA/kHGjzg5nleuwFO7Nd/IoDw4Pm58+4jNLmYG0wRA5bErc2Mr3Y+dXTDW1VvwqbJkzMCHQ4S1GTCBOIgUHJrGdEwqzR+jAp/o2qAZelUDoQnruEEdDclJI6576AlNVfc+22XN/+Y1vnJD0Yind6UpEEvn/Hqq15EYjCW7jZCJEpnNvDgkyelDjs106kuux2AAXCSobULOWP8mLhYlpoDMK4qAFXJGk+grtH8YXVz5KJblqaG1+VUdTc0I290bmUQAriGITRbdQnom0aoFj8kx1+wMD2ifncAXUQE4SkDqN1hE0jEophs1SUwZAOhUAiMCLwRtamtTZtbbmZErSAUHbSysaoEmnrsakiMiUAURi283gN6wans9oX8rOCrj7/JP35DFD+iQ7Au/K2KE1jzx6ujjUnXFH9KjEq6ZlhsTBICrNLJf47Pv/pkHzvup1w4dmUbEei0+bcXRqJuh5kVARQ8byyYxOwNGr7A87xh1tp8sGT+uMInrwi++Xj7TQz2d27NvwEkrOflAFQGIDA5khASBCGdO2/Z/MnLPwYfv5TFhjW7QhVKAB6afwe2LpFlFsCnlQEosgQgDsdOG1/LKeNqJS4JCSPJ/i+TakwEARor7gER1Iva5JmPOJK0RUqmoPnnlzFCtmIAhAAQEIQRgDaiYPIauNXcnDlRIrWNFY3hm7PG9YRqr7IV7HrCgAC17befjEvRq2nGhAHtBqDpOuI/I1diUUAMYIxEdyejBJqLnNoszGZtfiX/CztGv2mq+sdaAAAAAElFTkSuQmCC | Unsupported: The given URI is invalid: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEhklEQVR4AWJxL/BhIAesev1U5tcflpncgNrKIsqNIwzC9feMpDUzs70kOczMzMzJJcxwCTMzncPMnOwtzBwzMzPb0vRfeZPp0VhPS5I39V5fdiXV1/VD+9QC7OVn9BsyH1XIoEI1PfmJvLFowVV564+34DFUHudbmfDh4kVXh//7XwE+WjS/YfXZe3yr4j2rqj1AIhSB7hZ8ZtPZu/zw8cK523U4wE1/rvPfWrz4zs0m9ZdC9yUJAlASdBAgocRegfF/f3/h/PuaFsxMdwjAR0vm1+06eMMfIrhLqTWqdH4EumU2SPfMhigJAlRQbZrgrRsl9U+Y2DYDFCz3ILC9kiAiqSrMwbWT0nceEnR+9Kggc2zjOJCASDENkg0a5HfZZgDP81CM3CrQs2Z1+o7DJ6ePr8sK0AOCHv5Jjdt3evyYSaZ351VIStIxPRAUtrBYbxC6w+BZ0ivVSBKkIhJhemSyZpfB00EiPO2VjzYkxhcqXQqCWCShGplvi3y0QxqbuBurMjyJeWnkHZuAEgIQGsUBqwrfjZ+IlBgKyRJzVVYF8O6qFWdh86YzQzMrZigYmxAyfvHgLZQ/LC1CbeniW2Hkqr/PH16SgvGuf2/uzNMBwJA/njxizGPtSyAf7EziJCMGRDRdhoAC4PL1A/SrKQMAAQkEfpJAcRQdrBJ7gNwjSpJsdwK+CANBkqa1LgQB4IicV9nYUct7gaxuDJUErQIiEAiMxLVOFlKzIktPpT0ggpdpC/8YAHnxbgkUY4tAAFSR7AAXNyAAWHJrA/kHGjzg5nleuwFO7Nd/IoDw4Pm58+4jNLmYG0wRA5bErc2Mr3Y+dXTDW1VvwqbJkzMCHQ4S1GTCBOIgUHJrGdEwqzR+jAp/o2qAZelUDoQnruEEdDclJI6576AlNVfc+22XN/+Y1vnJD0Yind6UpEEvn/Hqq15EYjCW7jZCJEpnNvDgkyelDjs106kuux2AAXCSobULOWP8mLhYlpoDMK4qAFXJGk+grtH8YXVz5KJblqaG1+VUdTc0I290bmUQAriGITRbdQnom0aoFj8kx1+wMD2ifncAXUQE4SkDqN1hE0jEophs1SUwZAOhUAiMCLwRtamtTZtbbmZErSAUHbSysaoEmnrsakiMiUAURi283gN6wans9oX8rOCrj7/JP35DFD+iQ7Au/K2KE1jzx6ujjUnXFH9KjEq6ZlhsTBICrNLJf47Pv/pkHzvup1w4dmUbEei0+bcXRqJuh5kVARQ8byyYxOwNGr7A87xh1tp8sGT+uMInrwi++Xj7TQz2d27NvwEkrOflAFQGIDA5khASBCGdO2/Z/MnLPwYfv5TFhjW7QhVKAB6afwe2LpFlFsCnlQEosgQgDsdOG1/LKeNqJS4JCSPJ/i+TakwEARor7gER1Iva5JmPOJK0RUqmoPnnlzFCtmIAhAAQEIQRgDaiYPIauNXcnDlRIrWNFY3hm7PG9YRqr7IV7HrCgAC17befjEvRq2nGhAHtBqDpOuI/I1diUUAMYIxEdyejBJqLnNoszGZtfiX/CztGv2mq+sdaAAAAAElFTkSuQmCC
+2025-08-17T22:34:43.0440921Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0441332Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0442045Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0442663Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0442994Z ✔ [200] https://tikzjax.com/v1/fonts.css
+2025-08-17T22:34:43.0443458Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0443916Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0445034Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0446477Z ↻ [200] https://github.com/rob-murray/jekyll-twitter-plugin | Cached: OK (cached)
+2025-08-17T22:34:43.0469412Z ✔ [200] https://github.com/Delen0828
+2025-08-17T22:34:43.0470954Z ✔ [200] https://github.com/Delen0828
+2025-08-17T22:34:43.0472147Z ✔ [200] https://delen0828.github.io/news/
+2025-08-17T22:34:43.0473054Z ↻ [200] https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css | Cached: OK (cached)
+2025-08-17T22:34:43.0474165Z ↻ [200] https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap | Cached: OK (cached)
+2025-08-17T22:34:43.0475130Z ? [EXCLUDED] https://twitter.com/jekyllrb?ref_src=twsrc%5Etfw | Excluded
+2025-08-17T22:34:43.0476041Z ↻ [200] https://github.com/alshedivat/al-folio | Cached: OK (cached)
+2025-08-17T22:34:43.0476743Z ↻ [200] https://pages.github.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0477229Z ? [EXCLUDED] https://twitter.com/rubygems/status/518821243320287232?ref_src=twsrc%5Etfw | Excluded
+2025-08-17T22:34:43.0477715Z ↻ [200] https://unsplash.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0478897Z ? [IGNORED] data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg> | Unsupported: The given URI is invalid: data:image/svg+xml,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22><text%20y=%22.9em%22%20font-size=%2290%22>%F0%9F%93%8A</text></svg>
+2025-08-17T22:34:43.0480795Z ↻ [200] https://jekyllrb.com/ | Cached: OK (cached)
+2025-08-17T22:34:43.0497805Z ? [IGNORED] data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEhklEQVR4AWJxL/BhIAesev1U5tcflpncgNrKIsqNIwzC9feMpDUzs70kOczMzMzJJcxwCTMzncPMnOwtzBwzMzPb0vRfeZPp0VhPS5I39V5fdiXV1/VD+9QC7OVn9BsyH1XIoEI1PfmJvLFowVV564+34DFUHudbmfDh4kVXh//7XwE+WjS/YfXZe3yr4j2rqj1AIhSB7hZ8ZtPZu/zw8cK523U4wE1/rvPfWrz4zs0m9ZdC9yUJAlASdBAgocRegfF/f3/h/PuaFsxMdwjAR0vm1+06eMMfIrhLqTWqdH4EumU2SPfMhigJAlRQbZrgrRsl9U+Y2DYDFCz3ILC9kiAiqSrMwbWT0nceEnR+9Kggc2zjOJCASDENkg0a5HfZZgDP81CM3CrQs2Z1+o7DJ6ePr8sK0AOCHv5Jjdt3evyYSaZ351VIStIxPRAUtrBYbxC6w+BZ0ivVSBKkIhJhemSyZpfB00EiPO2VjzYkxhcqXQqCWCShGplvi3y0QxqbuBurMjyJeWnkHZuAEgIQGsUBqwrfjZ+IlBgKyRJzVVYF8O6qFWdh86YzQzMrZigYmxAyfvHgLZQ/LC1CbeniW2Hkqr/PH16SgvGuf2/uzNMBwJA/njxizGPtSyAf7EziJCMGRDRdhoAC4PL1A/SrKQMAAQkEfpJAcRQdrBJ7gNwjSpJsdwK+CANBkqa1LgQB4IicV9nYUct7gaxuDJUErQIiEAiMxLVOFlKzIktPpT0ggpdpC/8YAHnxbgkUY4tAAFSR7AAXNyAAWHJrA/kHGjzg5nleuwFO7Nd/IoDw4Pm58+4jNLmYG0wRA5bErc2Mr3Y+dXTDW1VvwqbJkzMCHQ4S1GTCBOIgUHJrGdEwqzR+jAp/o2qAZelUDoQnruEEdDclJI6576AlNVfc+22XN/+Y1vnJD0Yind6UpEEvn/Hqq15EYjCW7jZCJEpnNvDgkyelDjs106kuux2AAXCSobULOWP8mLhYlpoDMK4qAFXJGk+grtH8YXVz5KJblqaG1+VUdTc0I290bmUQAriGITRbdQnom0aoFj8kx1+wMD2ifncAXUQE4SkDqN1hE0jEophs1SUwZAOhUAiMCLwRtamtTZtbbmZErSAUHbSysaoEmnrsakiMiUAURi283gN6wans9oX8rOCrj7/JP35DFD+iQ7Au/K2KE1jzx6ujjUnXFH9KjEq6ZlhsTBICrNLJf47Pv/pkHzvup1w4dmUbEei0+bcXRqJuh5kVARQ8byyYxOwNGr7A87xh1tp8sGT+uMInrwi++Xj7TQz2d27NvwEkrOflAFQGIDA5khASBCGdO2/Z/MnLPwYfv5TFhjW7QhVKAB6afwe2LpFlFsCnlQEosgQgDsdOG1/LKeNqJS4JCSPJ/i+TakwEARor7gER1Iva5JmPOJK0RUqmoPnnlzFCtmIAhAAQEIQRgDaiYPIauNXcnDlRIrWNFY3hm7PG9YRqr7IV7HrCgAC17befjEvRq2nGhAHtBqDpOuI/I1diUUAMYIxEdyejBJqLnNoszGZtfiX/CztGv2mq+sdaAAAAAElFTkSuQmCC | Unsupported: The given URI is invalid: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEhklEQVR4AWJxL/BhIAesev1U5tcflpncgNrKIsqNIwzC9feMpDUzs70kOczMzMzJJcxwCTMzncPMnOwtzBwzMzPb0vRfeZPp0VhPS5I39V5fdiXV1/VD+9QC7OVn9BsyH1XIoEI1PfmJvLFowVV564+34DFUHudbmfDh4kVXh//7XwE+WjS/YfXZe3yr4j2rqj1AIhSB7hZ8ZtPZu/zw8cK523U4wE1/rvPfWrz4zs0m9ZdC9yUJAlASdBAgocRegfF/f3/h/PuaFsxMdwjAR0vm1+06eMMfIrhLqTWqdH4EumU2SPfMhigJAlRQbZrgrRsl9U+Y2DYDFCz3ILC9kiAiqSrMwbWT0nceEnR+9Kggc2zjOJCASDENkg0a5HfZZgDP81CM3CrQs2Z1+o7DJ6ePr8sK0AOCHv5Jjdt3evyYSaZ351VIStIxPRAUtrBYbxC6w+BZ0ivVSBKkIhJhemSyZpfB00EiPO2VjzYkxhcqXQqCWCShGplvi3y0QxqbuBurMjyJeWnkHZuAEgIQGsUBqwrfjZ+IlBgKyRJzVVYF8O6qFWdh86YzQzMrZigYmxAyfvHgLZQ/LC1CbeniW2Hkqr/PH16SgvGuf2/uzNMBwJA/njxizGPtSyAf7EziJCMGRDRdhoAC4PL1A/SrKQMAAQkEfpJAcRQdrBJ7gNwjSpJsdwK+CANBkqa1LgQB4IicV9nYUct7gaxuDJUErQIiEAiMxLVOFlKzIktPpT0ggpdpC/8YAHnxbgkUY4tAAFSR7AAXNyAAWHJrA/kHGjzg5nleuwFO7Nd/IoDw4Pm58+4jNLmYG0wRA5bErc2Mr3Y+dXTDW1VvwqbJkzMCHQ4S1GTCBOIgUHJrGdEwqzR+jAp/o2qAZelUDoQnruEEdDclJI6576AlNVfc+22XN/+Y1vnJD0Yind6UpEEvn/Hqq15EYjCW7jZCJEpnNvDgkyelDjs106kuux2AAXCSobULOWP8mLhYlpoDMK4qAFXJGk+grtH8YXVz5KJblqaG1+VUdTc0I290bmUQAriGITRbdQnom0aoFj8kx1+wMD2ifncAXUQE4SkDqN1hE0jEophs1SUwZAOhUAiMCLwRtamtTZtbbmZErSAUHbSysaoEmnrsakiMiUAURi283gN6wans9oX8rOCrj7/JP35DFD+iQ7Au/K2KE1jzx6ujjUnXFH9KjEq6ZlhsTBICrNLJf47Pv/pkHzvup1w4dmUbEei0+bcXRqJuh5kVARQ8byyYxOwNGr7A87xh1tp8sGT+uMInrwi++Xj7TQz2d27NvwEkrOflAFQGIDA5khASBCGdO2/Z/MnLPwYfv5TFhjW7QhVKAB6afwe2LpFlFsCnlQEosgQgDsdOG1/LKeNqJS4JCSPJ/i+TakwEARor7gER1Iva5JmPOJK0RUqmoPnnlzFCtmIAhAAQEIQRgDaiYPIauNXcnDlRIrWNFY3hm7PG9YRqr7IV7HrCgAC17befjEvRq2nGhAHtBqDpOuI/I1diUUAMYIxEdyejBJqLnNoszGZtfiX/CztGv2mq+sdaAAAAAElFTkSuQmCC
+2025-08-17T22:34:43.0540362Z ✔ [200] https://github.com/red-data-tools/jekyll-jupyter-notebook
+2025-08-17T22:34:43.0541147Z ✔ [200] https://github.com/red-data-tools/jekyll-jupyter-notebook
+2025-08-17T22:34:43.0630948Z ✔ [200] https://arxiv.org/
+2025-08-17T22:34:43.0692855Z ✔ [200] https://delen0828.github.io/repositories/
+2025-08-17T22:34:43.0811058Z ✔ [200] https://delen0828.github.io/sample-posts/2015/03/15/formatting-and-links.html
+2025-08-17T22:34:43.0875401Z ✔ [200] http://www.intmath.com/cg5/katex-mathjax-comparison.php
+2025-08-17T22:34:43.0934048Z ✔ [200] https://delen0828.github.io/sample-posts/2015/10/20/math.html
+2025-08-17T22:34:43.0941368Z ✔ [200] https://delen0828.github.io/sample-posts/2015/07/15/code.html
+2025-08-17T22:34:43.0950136Z ✔ [200] http://www.intmath.com/cg5/katex-mathjax-comparison.php
+2025-08-17T22:34:43.1053485Z ✔ [200] https://github.com/jekyll/github-metadata/blob/master/docs/authentication.md
+2025-08-17T22:34:43.1070530Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1073073Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1073992Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1074958Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1076913Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1077565Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1084981Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1087290Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1088711Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1096455Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1097058Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1097960Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1098626Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1099314Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1103488Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1103984Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1104896Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1105250Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1105556Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1105877Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1106372Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1106676Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1106954Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1107235Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1107509Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1107792Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1108233Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1108548Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1109052Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1109530Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1110090Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1110704Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1111201Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1111733Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1112238Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1112721Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1113203Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1113704Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1114202Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1114779Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1115333Z ✔ [200] https://github.com/bogoli/-folio
+2025-08-17T22:34:43.1153311Z ✔ [200] https://github.com/jekyll/github-metadata/blob/master/docs/authentication.md
+2025-08-17T22:34:43.1167262Z ✔ [200] https://delen0828.github.io/sample-posts/2023/03/20/tables.html
+2025-08-17T22:34:43.1184785Z ✔ [200] https://delen0828.github.io/sample-posts/2023/04/25/sidebar-table-of-contents.html
+2025-08-17T22:34:43.1186850Z ✔ [200] https://delen0828.github.io/sample-posts/2023/04/24/videos.html
+2025-08-17T22:34:43.1210730Z ✔ [200] https://delen0828.github.io/sample-posts/2023/03/20/table-of-contents.html
+2025-08-17T22:34:43.1241702Z ✔ [200] https://delen0828.github.io/sample-posts/2024/01/27/vega-lite.html
+2025-08-17T22:34:43.1262619Z ✔ [200] https://delen0828.github.io/sample-posts/2023/04/25/audios.html
+2025-08-17T22:34:43.1309220Z ✔ [200] https://vis.gatech.edu/
+2025-08-17T22:34:43.1358688Z ✔ [200] https://delen0828.github.io/sample-posts/2024/01/26/echarts.html
+2025-08-17T22:34:43.1362270Z ✔ [200] https://delen0828.github.io/sample-posts/2024/01/26/geojson-map.html
+2025-08-17T22:34:43.1387568Z ✔ [200] https://delen0828.github.io/sample-posts/2023/07/12/post-bibliography.html
+2025-08-17T22:34:43.1421784Z ✔ [200] https://github.com/jekyll/github-metadata/blob/master/docs/site.github.md
+2025-08-17T22:34:43.1422941Z ✔ [200] https://github.com/jekyll/github-metadata/blob/master/docs/site.github.md
+2025-08-17T22:34:43.1434725Z ✔ [200] https://github.com/rtfpessoa/diff2html/commit/c2c253d3e3f8b8b267f551e659f72b44ca2ac927
+2025-08-17T22:34:43.1438623Z ✔ [200] https://github.com/rtfpessoa/diff2html/commit/c2c253d3e3f8b8b267f551e659f72b44ca2ac927
+2025-08-17T22:34:43.1451022Z ✔ [200] https://delen0828.github.io/sample-posts/2024/01/27/advanced-images.html
+2025-08-17T22:34:43.1467545Z ✔ [200] https://delen0828.github.io/sample-posts/external-services/2020/09/28/twitter.html
+2025-08-17T22:34:43.1494896Z ✔ [200] https://github.com/alshedivat/al-folio/issues
+2025-08-17T22:34:43.1500328Z ✔ [200] https://delen0828.github.io/sample-posts/2023/12/12/tikzjax.html
+2025-08-17T22:34:43.1560273Z ✔ [200] https://github.com/alshedivat/al-folio/issues/1609#issuecomment-1656995674
+2025-08-17T22:34:43.1561821Z ✔ [200] https://github.com/alshedivat/al-folio/issues/1609#issuecomment-1656995674
+2025-08-17T22:34:43.1571217Z ✔ [200] https://delen0828.github.io/sample-posts/2024/04/15/pseudocode.html
+2025-08-17T22:34:43.1579052Z ✔ [200] https://delen0828.github.io/sample-posts/external-services/2022/12/10/giscus-comments.html
+2025-08-17T22:34:43.1703471Z ✔ [200] https://delen0828.github.io/sample-posts/external-services/2020/09/28/github-metadata.html
+2025-08-17T22:34:43.1729015Z ✔ [200] https://delen0828.github.io/sample-posts/external-services/2015/10/20/disqus-comments.html
+2025-08-17T22:34:43.1794237Z ✔ [200] https://delen0828.github.io/sample-posts/2023/07/04/jupyter-notebook.html
+2025-08-17T22:34:43.1896311Z ✔ [200] https://cdn.jsdelivr.net/npm/diff2html@3.4.47/bundles/css/diff2html.min.css
+2025-08-17T22:34:43.1900723Z ✔ [200] https://delen0828.github.io/sample-posts/2023/05/12/custom-blockquotes.html
+2025-08-17T22:34:43.1927768Z ✔ [200] https://delen0828.github.io/sample-posts/2024/01/27/code-diff.html
+2025-08-17T22:34:43.1969228Z ✔ [200] https://www.youtube.com/embed/jNQXAC9IVRw
+2025-08-17T22:34:43.1970667Z ✔ [200] https://delen0828.github.io/sample-posts/2024/01/26/chartjs.html
+2025-08-17T22:34:43.1985898Z ✔ [200] https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css
+2025-08-17T22:34:43.2005450Z ✔ [200] https://delen0828.github.io/teaching/
+2025-08-17T22:34:43.2124606Z ✔ [200] https://delen0828.github.io/sample-posts/2015/05/15/images.html
+2025-08-17T22:34:43.2149624Z ✔ [200] http://www.intmath.com/cg5/katex-mathjax-comparison.php
+2025-08-17T22:34:43.2234783Z ✔ [200] https://player.vimeo.com/video/524933864?h=1ac4fd9fb4&title=0&byline=0&portrait=0
+2025-08-17T22:34:43.2470738Z ✔ [200] https://github.com/alshedivat
+2025-08-17T22:34:43.2951061Z ✔ [200] https://github.com/torvalds
+2025-08-17T22:34:43.3218270Z ✔ [200] https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table.min.css
+2025-08-17T22:34:43.3399456Z ✔ [200] https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.css
+2025-08-17T22:34:43.3460401Z ✔ [200] https://cdn.jsdelivr.net/npm/img-comparison-slider@8.0.6/dist/styles.min.css
+2025-08-17T22:34:43.3667895Z ✔ [200] https://github.com/alshedivat/al-folio/pull/2048
+2025-08-17T22:34:43.3873826Z ✔ [200] https://github.com/FortAwesome/Font-Awesome
+2025-08-17T22:34:43.3881645Z ✔ [200] https://github.com/jpswalsh/academicons
+2025-08-17T22:34:43.4222831Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=jpswalsh&repo=academicons&theme=default&show_owner=true
+2025-08-17T22:34:43.4299100Z ✔ [200] https://github.com/inukshuk/jekyll-scholar
+2025-08-17T22:34:43.4300422Z ✔ [200] https://github.com/inukshuk/jekyll-scholar
+2025-08-17T22:34:43.4328702Z ✔ [200] https://github.com/jquery/jquery
+2025-08-17T22:34:43.4436849Z ✔ [200] https://github.com/jekyll/jekyll
+2025-08-17T22:34:43.4554015Z ✔ [200] https://github.com/twbs/bootstrap
+2025-08-17T22:34:43.4599051Z ✔ [200] http://t.co/m4EIQPM9h4
+2025-08-17T22:34:43.5113705Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=alshedivat&repo=al-folio&theme=dark&show_owner=false
+2025-08-17T22:34:43.5423004Z ✔ [200] http://t.co/m4EIQPM9h4
+2025-08-17T22:34:43.5697383Z ✔ [200] https://kramdown.gettalong.org/syntax.html#extensions
+2025-08-17T22:34:43.5699308Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=alshedivat&repo=al-folio&theme=default&show_owner=false
+2025-08-17T22:34:43.6344840Z ✔ [200] https://github.com/ryo-ma/github-profile-trophy
+2025-08-17T22:34:43.6479251Z ✔ [200] https://www.pinterest.com/
+2025-08-17T22:34:43.6928102Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=jquery&repo=jquery&theme=dark&show_owner=true
+2025-08-17T22:34:43.8071506Z ✔ [200] https://kramdown.gettalong.org/syntax.html#extensions
+2025-08-17T22:34:43.8181683Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=jekyll&repo=jekyll&theme=default&show_owner=true
+2025-08-17T22:34:43.9426921Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=jpswalsh&repo=academicons&theme=dark&show_owner=true
+2025-08-17T22:34:44.0796622Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=jquery&repo=jquery&theme=default&show_owner=true
+2025-08-17T22:34:44.1524854Z ✔ [200] https://github-readme-stats.vercel.app/api/?username=alshedivat&theme=dark&show_icons=true
+2025-08-17T22:34:44.3700992Z ✔ [200] https://www.altmetric.com/
+2025-08-17T22:34:44.6724368Z ✔ [200] https://github.com/mathjax/MathJax
+2025-08-17T22:34:44.6927184Z ✔ [200] https://github-readme-stats.vercel.app/api/?username=torvalds&theme=default&show_icons=true
+2025-08-17T22:34:44.6953810Z ✔ [200] https://github-readme-stats.vercel.app/api/?username=torvalds&theme=dark&show_icons=true
+2025-08-17T22:34:44.7629025Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=twbs&repo=bootstrap&theme=dark&show_owner=true
+2025-08-17T22:34:44.9584426Z ✔ [200] https://github-readme-stats.vercel.app/api/?username=alshedivat&theme=default&show_icons=true
+2025-08-17T22:34:45.1400921Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=mathjax&repo=MathJax&theme=dark&show_owner=true
+2025-08-17T22:34:45.2339499Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=mathjax&repo=MathJax&theme=default&show_owner=true
+2025-08-17T22:34:45.4687197Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=FortAwesome&repo=Font-Awesome&theme=dark&show_owner=true
+2025-08-17T22:34:45.7150553Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=FortAwesome&repo=Font-Awesome&theme=default&show_owner=true
+2025-08-17T22:34:46.0183852Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=jekyll&repo=jekyll&theme=dark&show_owner=true
+2025-08-17T22:34:46.2455756Z ✔ [200] https://github-readme-stats.vercel.app/api/pin/?username=twbs&repo=bootstrap&theme=default&show_owner=true
+2025-08-17T22:34:47.0466948Z ✔ [200] https://www.ji.sjtu.edu.cn/
+2025-08-17T22:34:47.0570162Z ## Summary
+2025-08-17T22:34:47.0570399Z 
+2025-08-17T22:34:47.0570536Z | Status        | Count |
+2025-08-17T22:34:47.0570922Z |---------------|-------|
+2025-08-17T22:34:47.0571544Z | 🔍 Total      | 915   |
+2025-08-17T22:34:47.0571972Z | ✅ Successful | 779   |
+2025-08-17T22:34:47.0572405Z | ⏳ Timeouts   | 0     |
+2025-08-17T22:34:47.0572851Z | 🔀 Redirected | 0     |
+2025-08-17T22:34:47.0573270Z | 👻 Excluded   | 9     |
+2025-08-17T22:34:47.0573683Z | ❓ Unknown    | 0     |
+2025-08-17T22:34:47.0574085Z | 🚫 Errors     | 51    |
+2025-08-17T22:34:47.0574305Z 
+2025-08-17T22:34:47.0574444Z ## Errors per input
+2025-08-17T22:34:47.0574654Z 
+2025-08-17T22:34:47.0574846Z ### Errors in _site/news/announcement_8/index.html
+2025-08-17T22:34:47.0575194Z 
+2025-08-17T22:34:47.0575958Z * [404] [https://delen0828.github.io/news/announcement_8/](https://delen0828.github.io/news/announcement_8/) | Failed: Network error: Not Found
+2025-08-17T22:34:47.0576900Z 
+2025-08-17T22:34:47.0577036Z ### Errors in _site/news/announcement_7/index.html
+2025-08-17T22:34:47.0577490Z 
+2025-08-17T22:34:47.0577901Z * [404] [https://delen0828.github.io/news/announcement_7/](https://delen0828.github.io/news/announcement_7/) | Failed: Network error: Not Found
+2025-08-17T22:34:47.0578365Z 
+2025-08-17T22:34:47.0578486Z ### Errors in _site/sample-posts/2015/05/15/images.html
+2025-08-17T22:34:47.0578834Z 
+2025-08-17T22:34:47.0579653Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/7-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/7-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0581342Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/8-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/8-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0583005Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/10-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/10-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0584653Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/12-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/12-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0586802Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/12-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/12-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0588573Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/11-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/11-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0590201Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/7-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/7-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0591856Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/11-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/11-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0594357Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/8-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/8-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0597531Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/10-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/10-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0599205Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/9-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/9-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0600822Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/9-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2015/05/15/assets/img/9-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0601675Z 
+2025-08-17T22:34:47.0601758Z ### Errors in CUSTOMIZE.md
+2025-08-17T22:34:47.0601896Z 
+2025-08-17T22:34:47.0602540Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/FAQ.md](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/FAQ.md) | Failed: Cannot find file
+2025-08-17T22:34:47.0603656Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/INSTALL.md](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/INSTALL.md) | Failed: Cannot find file
+2025-08-17T22:34:47.0604350Z 
+2025-08-17T22:34:47.0604441Z ### Errors in _site/projects/index.html
+2025-08-17T22:34:47.0604618Z 
+2025-08-17T22:34:47.0605329Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/12-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/12-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0606971Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/7-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/7-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0608407Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/12-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/12-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0609843Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/1-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/1-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0611263Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/3-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/3-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0612691Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/1-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/1-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0614117Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/7-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/7-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0615552Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/3-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/projects/assets/img/3-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0616502Z 
+2025-08-17T22:34:47.0616606Z ### Errors in _site/publications/index.html
+2025-08-17T22:34:47.0616780Z 
+2025-08-17T22:34:47.0617715Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/Hier-SUCB-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/Hier-SUCB-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0619678Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/hier-ucb-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/hier-ucb-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0621595Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/hier-ucb-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/hier-ucb-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0623632Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/VisChatter-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/VisChatter-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0625544Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/motion-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/motion-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0628149Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/VisChatter-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/VisChatter-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0630089Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/Hier-SUCB-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/Hier-SUCB-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0631987Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/motion-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/publications/assets/img/publication_preview/motion-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0632981Z 
+2025-08-17T22:34:47.0633123Z ### Errors in _site/sample-posts/2024/01/27/advanced-images.html
+2025-08-17T22:34:47.0633353Z 
+2025-08-17T22:34:47.0634146Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/10-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/10-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0635873Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic_color-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic_color-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0639599Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0643158Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic_color-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic_color-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0644988Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/8-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/8-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0647007Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/9-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/9-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0648661Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/12-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/12-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0650303Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/7-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/7-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0652118Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/10-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/10-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0653872Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/8-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/8-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0655503Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/7-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/7-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0657396Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/9-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/9-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0659090Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/prof_pic-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0660770Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/12-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/sample-posts/2024/01/27/assets/img/12-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0661628Z 
+2025-08-17T22:34:47.0661716Z ### Errors in CONTRIBUTING.md
+2025-08-17T22:34:47.0661860Z 
+2025-08-17T22:34:47.0662356Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/FAQ.md](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/FAQ.md) | Failed: Cannot find file
+2025-08-17T22:34:47.0662922Z 
+2025-08-17T22:34:47.0663031Z ### Errors in _site/news/announcement_6/index.html
+2025-08-17T22:34:47.0663228Z 
+2025-08-17T22:34:47.0663624Z * [404] [https://delen0828.github.io/news/announcement_6/](https://delen0828.github.io/news/announcement_6/) | Failed: Network error: Not Found
+2025-08-17T22:34:47.0664097Z 
+2025-08-17T22:34:47.0664193Z ### Errors in _site/_pages/dropdown.html
+2025-08-17T22:34:47.0664359Z 
+2025-08-17T22:34:47.0664737Z * [404] [https://delen0828.github.io/_pages/dropdown.html](https://delen0828.github.io/_pages/dropdown.html) | Failed: Network error: Not Found
+2025-08-17T22:34:47.0665186Z 
+2025-08-17T22:34:47.0665271Z ### Errors in _site/people/index.html
+2025-08-17T22:34:47.0665434Z 
+2025-08-17T22:34:47.0666363Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/people/assets/img/selfie-800.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/people/assets/img/selfie-800.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0667899Z * [ERR] [file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/people/assets/img/selfie-1400.webp](file:///home/runner/work/Delen0828.github.io/Delen0828.github.io/_site/people/assets/img/selfie-1400.webp) | Failed: Cannot find file
+2025-08-17T22:34:47.0668701Z 
+2025-08-17T22:34:47.0677929Z ##[error]Process completed with exit code 2.
+2025-08-17T22:34:47.0841703Z Post job cleanup.
+2025-08-17T22:34:47.1790915Z [command]/usr/bin/git version
+2025-08-17T22:34:47.1828762Z git version 2.50.1
+2025-08-17T22:34:47.1872993Z Temporarily overriding HOME='/home/runner/work/_temp/24dca4e2-ee17-41a7-9cf4-46c259f88c49' before making global git config changes
+2025-08-17T22:34:47.1874265Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-17T22:34:47.1887293Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Delen0828.github.io/Delen0828.github.io
+2025-08-17T22:34:47.1923263Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-17T22:34:47.1958253Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-17T22:34:47.2189438Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-08-17T22:34:47.2211060Z http.https://github.com/.extraheader
+2025-08-17T22:34:47.2223852Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-08-17T22:34:47.2255829Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-08-17T22:34:47.2590730Z Cleaning up orphan processes

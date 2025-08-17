@@ -1,0 +1,69 @@
+﻿2025-08-17T22:34:38.6341046Z ##[group]Run actions/checkout@v4
+2025-08-17T22:34:38.6341670Z with:
+2025-08-17T22:34:38.6341891Z   repository: Delen0828/Delen0828.github.io
+2025-08-17T22:34:38.6342374Z   token: ***
+2025-08-17T22:34:38.6342568Z   ssh-strict: true
+2025-08-17T22:34:38.6342757Z   ssh-user: git
+2025-08-17T22:34:38.6342955Z   persist-credentials: true
+2025-08-17T22:34:38.6343168Z   clean: true
+2025-08-17T22:34:38.6343365Z   sparse-checkout-cone-mode: true
+2025-08-17T22:34:38.6343793Z   fetch-depth: 1
+2025-08-17T22:34:38.6343985Z   fetch-tags: false
+2025-08-17T22:34:38.6344191Z   show-progress: true
+2025-08-17T22:34:38.6344386Z   lfs: false
+2025-08-17T22:34:38.6344559Z   submodules: false
+2025-08-17T22:34:38.6344755Z   set-safe-directory: true
+2025-08-17T22:34:38.6345287Z ##[endgroup]
+2025-08-17T22:34:38.7466461Z Syncing repository: Delen0828/Delen0828.github.io
+2025-08-17T22:34:38.7468577Z ##[group]Getting Git version info
+2025-08-17T22:34:38.7469372Z Working directory is '/home/runner/work/Delen0828.github.io/Delen0828.github.io'
+2025-08-17T22:34:38.7470528Z [command]/usr/bin/git version
+2025-08-17T22:34:38.7494980Z git version 2.50.1
+2025-08-17T22:34:38.7537317Z ##[endgroup]
+2025-08-17T22:34:38.7556853Z Temporarily overriding HOME='/home/runner/work/_temp/5f3173a4-77ed-47f4-9d48-2d700af2a78b' before making global git config changes
+2025-08-17T22:34:38.7557994Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-17T22:34:38.7574694Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Delen0828.github.io/Delen0828.github.io
+2025-08-17T22:34:38.7614163Z Deleting the contents of '/home/runner/work/Delen0828.github.io/Delen0828.github.io'
+2025-08-17T22:34:38.7617590Z ##[group]Initializing the repository
+2025-08-17T22:34:38.7621432Z [command]/usr/bin/git init /home/runner/work/Delen0828.github.io/Delen0828.github.io
+2025-08-17T22:34:38.7717805Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-08-17T22:34:38.7720658Z hint: is subject to change. To configure the initial branch name to use in all
+2025-08-17T22:34:38.7721478Z hint: of your new repositories, which will suppress this warning, call:
+2025-08-17T22:34:38.7721839Z hint:
+2025-08-17T22:34:38.7722134Z hint: 	git config --global init.defaultBranch <name>
+2025-08-17T22:34:38.7722416Z hint:
+2025-08-17T22:34:38.7722689Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-08-17T22:34:38.7723132Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-08-17T22:34:38.7723467Z hint:
+2025-08-17T22:34:38.7723920Z hint: 	git branch -m <name>
+2025-08-17T22:34:38.7724164Z hint:
+2025-08-17T22:34:38.7724465Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-08-17T22:34:38.7725025Z Initialized empty Git repository in /home/runner/work/Delen0828.github.io/Delen0828.github.io/.git/
+2025-08-17T22:34:38.7733142Z [command]/usr/bin/git remote add origin https://github.com/Delen0828/Delen0828.github.io
+2025-08-17T22:34:38.7771224Z ##[endgroup]
+2025-08-17T22:34:38.7771691Z ##[group]Disabling automatic garbage collection
+2025-08-17T22:34:38.7775707Z [command]/usr/bin/git config --local gc.auto 0
+2025-08-17T22:34:38.7804805Z ##[endgroup]
+2025-08-17T22:34:38.7805183Z ##[group]Setting up auth
+2025-08-17T22:34:38.7811587Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-17T22:34:38.7841959Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-17T22:34:38.8169320Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-08-17T22:34:38.8196932Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-08-17T22:34:38.8418801Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-08-17T22:34:38.8451576Z ##[endgroup]
+2025-08-17T22:34:38.8452258Z ##[group]Fetching the repository
+2025-08-17T22:34:38.8468771Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bce629ffaf8445cc5471cff443caab9201157ce0:refs/remotes/origin/main
+2025-08-17T22:34:40.6819521Z From https://github.com/Delen0828/Delen0828.github.io
+2025-08-17T22:34:40.6820229Z  * [new ref]         bce629ffaf8445cc5471cff443caab9201157ce0 -> origin/main
+2025-08-17T22:34:40.6842642Z ##[endgroup]
+2025-08-17T22:34:40.6843145Z ##[group]Determining the checkout info
+2025-08-17T22:34:40.6845184Z ##[endgroup]
+2025-08-17T22:34:40.6849956Z [command]/usr/bin/git sparse-checkout disable
+2025-08-17T22:34:40.6892854Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-08-17T22:34:40.6920294Z ##[group]Checking out the ref
+2025-08-17T22:34:40.6924168Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-08-17T22:34:40.9941868Z Switched to a new branch 'main'
+2025-08-17T22:34:40.9943122Z branch 'main' set up to track 'origin/main'.
+2025-08-17T22:34:40.9966480Z ##[endgroup]
+2025-08-17T22:34:41.0004032Z [command]/usr/bin/git log -1 --format=%H
+2025-08-17T22:34:41.0026488Z bce629ffaf8445cc5471cff443caab9201157ce0
