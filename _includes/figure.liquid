@@ -12,7 +12,7 @@
       https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
     {% assign image_extension = include.path | split: '.' | last | downcase %}
-    {% if site.imagemagick.enabled and image_extension != "svg" %}
+    {% if site.imagemagick.enabled and image_extension != "svg" and image_extension != "gif" %}
       <source
         class="responsive-img-srcset"
         srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{i}}w,{% endfor %}"

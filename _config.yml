@@ -382,7 +382,6 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
   output_formats:
     webp: "-quality 85"
 
@@ -588,6 +587,7 @@ jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
 jsonresume:
+  - teaching
   - basics
   - work
   - education
